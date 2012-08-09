@@ -1,0 +1,39 @@
+[default]
+builder: pbuilder
+packagedir: /srv/incoming
+configdir: /home/debomatic/config/distributions
+pbuilderhooks: /opt
+maxbuilds: 3
+inotify: 0
+sleep: 10
+logfile: /var/log/debomatic.log
+
+[gpg]
+gpg: 1
+keyring: /home/debomatic/config/keyring/debomatic.gpg
+
+[modules]
+modules: 1
+modulespath: /home/debomatic/debomatic/modules
+
+[runtime]
+distblacklist: lucid natty oldstable oneiric precise quantal
+alwaysupdate: unstable experimental squeeze-backports
+modulesblacklist: Mailer
+mapper = {'sid':'unstable'}
+
+[mailer]
+fromaddr: debomatic@debomatic.debian.net
+smtphost: 172.17.11.200
+smtpport: 25
+authrequired: 0
+smtpuser: user
+smtppass: pass
+success: /home/debomatic/debomatic/etc/debomatic/mailer/build_success.mail-template
+failure: /home/debomatic/debomatic/etc/debomatic/mailer/build_failure.mail-template
+
+[lintian]
+lintopts: -i -I -E --pedantic
+
+[internals]
+configversion = 010a
