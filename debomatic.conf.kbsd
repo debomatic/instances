@@ -19,7 +19,7 @@ modulespath: /home/debomatic/debomatic/modules
 
 [runtime]
 distblacklist: lucid oldstable oneiric precise quantal raring
-alwaysupdate: unstable experimental squeeze-backports
+alwaysupdate: unstable experimental
 modulesblacklist: Mailer Piuparts
 mapper = {'sid':'unstable'}
 
