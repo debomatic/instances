@@ -2,7 +2,7 @@
 builder: pbuilder
 packagedir: /srv/incoming
 configdir: /home/debomatic/config/distributions
-pbuilderhooks: /opt
+pbuilderhooks: /home/debomatic/debomatic/pbuilderhooks
 maxbuilds: 3
 inotify: 0
 sleep: 10
