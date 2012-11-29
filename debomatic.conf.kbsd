@@ -18,7 +18,7 @@ modules: 1
 modulespath: /home/debomatic/debomatic/modules
 
 [runtime]
-distblacklist: lucid natty oldstable oneiric precise quantal
+distblacklist: lucid oldstable oneiric precise quantal raring
 alwaysupdate: unstable experimental squeeze-backports
 modulesblacklist: Mailer
 mapper = {'sid':'unstable'}
