@@ -22,7 +22,7 @@ distblacklist: lucid oldstable oneiric precise quantal raring
 alwaysupdate: unstable experimental
 modulesblacklist: Mailer Piuparts
 mapper = {'sid':'unstable'
-          'testing-proposed-updates': 'testing'}
+          'testing-proposed-updates':'testing'}
 
 [lintian]
 lintopts: -i -I -E --pedantic
