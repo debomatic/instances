@@ -1,5 +1,5 @@
 DISTRIBUTION=unstable
-MIRRORSITE=ftp://ftp.debian.org/debian
+MIRRORSITE=http://ftp.debian.org/debian
 COMPONENTS="main contrib non-free"
 OTHERMIRROR="deb http://localhost/unstable/pool/ ./"
 DEBOOTSTRAP=debootstrap
