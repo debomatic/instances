@@ -1,0 +1,48 @@
+[default]
+builder: cowbuilder
+packagedir: /srv/debomatic-amd64
+configdir: /home/debomatic/config/distributions
+architecture: system
+pbuilderhooks: /home/debomatic/debomatic/pbuilderhooks
+maxbuilds: 4
+inotify: 1
+sleep: 60
+logfile: /var/log/debomatic.log
+logverbosity: 1
+
+[gpg]
+gpg: 1
+keyring: /home/debomatic/config/keyring/debomatic.gpg
+
+[modules]
+modules: 1
+modulespath: /home/debomatic/debomatic/modules
+
+[runtime]
+distblacklist: oldstable
+alwaysupdate: unstable experimental saucy
+modulesblacklist: Mailer
+mapper = {'sid':'unstable',
+          'testing-proposed-updates':'testing',
+          'saucy-proposed':'saucy',
+          'quantal-proposed':'quantal'}
+
+[lintian]
+lintopts: -i -I -E --pedantic
+
+[mailer]
+fromaddr: debomatic@debomatic.debian.net
+smtphost: 172.17.11.200
+smtpport: 25
+authrequired: 0
+smtpuser: user
+smtppass: pass
+success: /home/debomatic/debomatic/etc/debomatic/mailer/build_success.mail-template
+failure: /home/debomatic/debomatic/etc/debomatic/mailer/build_failure.mail-template
+lintlog: 0
+
+[piuparts]
+piupopts: --log-level=info
+
+[internals]
+configversion: 012a

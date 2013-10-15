@@ -1,9 +1,10 @@
 [default]
 builder: cowbuilder
-packagedir: /srv/incoming
+packagedir: /srv/debomatic-i386
 configdir: /home/debomatic/config/distributions
+architecture: i386
 pbuilderhooks: /home/debomatic/debomatic/pbuilderhooks
-maxbuilds: 3
+maxbuilds: 4
 inotify: 1
 sleep: 60
 logfile: /var/log/debomatic.log
@@ -44,4 +45,4 @@ lintlog: 0
 piupopts: --log-level=info
 
 [internals]
-configversion: 011a
+configversion: 012a
