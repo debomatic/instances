@@ -4,20 +4,21 @@ import os
 from shutil import rmtree
 from time import time
 
-basedir = '/srv/incoming'
+basedirs = ('/srv/debomatic-amd64', '/srv/debomatic-i386')
 delta = 3*24*60*60
 ctime = time()
 exclude = ('.header')
 
-for dir in os.listdir(basedir):
-    if dir in exclude:
-        continue
-    dir = os.path.join(basedir, dir, 'pool')
-    if os.path.isdir(dir):
-        for package in os.listdir(dir):
-            package = os.path.join(dir, package)
-            if not os.path.isdir(package):
-                continue
-            ptime = os.stat(package).st_mtime
-            if ptime + delta < ctime:
-                rmtree(package)
+for basedir in basedirs:
+    for dir in os.listdir(basedir):
+        if dir in exclude:
+            continue
+        dir = os.path.join(basedir, dir, 'pool')
+        if os.path.isdir(dir):
+            for package in os.listdir(dir):
+                package = os.path.join(dir, package)
+                if not os.path.isdir(package):
+                    continue
+                ptime = os.stat(package).st_mtime
+                if ptime + delta < ctime:
+                    rmtree(package)
