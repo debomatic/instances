@@ -20,12 +20,11 @@ modulespath: /home/debomatic/debomatic/modules
 
 [runtime]
 distblacklist: oldstable
-alwaysupdate: unstable experimental saucy
+alwaysupdate: unstable experimental trusty
 modulesblacklist: Lintian Mailer Piuparts
 mapper = {'sid':'unstable',
           'testing-proposed-updates':'testing',
-          'saucy-proposed':'saucy',
-          'quantal-proposed':'quantal'}
+          'trusty-proposed':'trusty'}
 
 [lintian]
 lintopts: -i -I -E --pedantic
