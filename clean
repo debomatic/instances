@@ -4,12 +4,15 @@ import os
 from shutil import rmtree
 from time import time
 
-basedirs = ('/srv/debomatic-amd64', '/srv/debomatic-i386')
+basedirs = ('/srv/debomatic-amd64', '/srv/debomatic-i386',
+            '/srv/debomatic-armhf')
 delta = 3*24*60*60
 ctime = time()
 exclude = ('.header')
 
 for basedir in basedirs:
+    if not os.path.isdir(basedir):
+        continue
     for dir in os.listdir(basedir):
         if dir in exclude:
             continue
