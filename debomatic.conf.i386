@@ -43,5 +43,8 @@ lintlog: 0
 [piuparts]
 piupopts: --log-level=info
 
+[jsonlogger]
+jsonfile = /var/log/debomatic-i386.json
+
 [internals]
 configversion: 012a
