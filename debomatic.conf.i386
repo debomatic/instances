@@ -7,7 +7,7 @@ pbuilderhooks: /home/debomatic/debomatic/pbuilderhooks
 maxbuilds: 4
 inotify: 1
 sleep: 60
-logfile: /var/log/debomatic.log
+logfile: /var/log/debomatic-i386.log
 logverbosity: 1
 
 [gpg]
