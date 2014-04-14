@@ -1,8 +1,9 @@
 [default]
 builder: cowbuilder
+debootstrap: qemu-debootstrap
 packagedir: /srv/debomatic-armhf
 configdir: /home/debomatic/config/distributions
-architecture: system
+architecture: armhf
 pbuilderhooks: /opt
 maxbuilds: 1
 inotify: 1

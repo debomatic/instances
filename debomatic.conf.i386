@@ -1,5 +1,6 @@
 [default]
 builder: cowbuilder
+debootstrap: debootstrap
 packagedir: /srv/debomatic-i386
 configdir: /home/debomatic/config/distributions
 architecture: i386
