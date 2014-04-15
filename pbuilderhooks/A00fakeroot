@@ -1,0 +1,10 @@
+#!/bin/sh
+
+architectures="powerpc"
+buildarch=`dpkg-architecture -qDEB_BUILD_ARCH`
+
+echo $architectures | grep -q $buildarch
+if [ $? -eq 0 ]
+then
+	update-alternatives --set fakeroot /usr/bin/fakeroot-tcp
+fi
