@@ -1,0 +1,51 @@
+[default]
+builder: cowbuilder
+debootstrap: qemu-debootstrap
+packagedir: /srv/debomatic-armel
+configdir: /home/debomatic/config/distributions
+architecture: armel
+pbuilderhooks: /opt
+maxbuilds: 1
+inotify: 1
+sleep: 60
+logfile: /var/log/debomatic-armel.log
+logverbosity: 1
+
+[gpg]
+gpg: 1
+keyring: /home/debomatic/config/keyring/debomatic.gpg
+
+[modules]
+modules: 1
+modulespath: /home/debomatic/debomatic/modules
+
+[runtime]
+distblacklist: oldstable
+alwaysupdate: unstable experimental trusty
+modulesblacklist: Lintian Mailer Piuparts
+mapper = {'sid':'unstable',
+          'testing-proposed-updates':'testing',
+          'trusty-proposed':'trusty'}
+
+[lintian]
+lintopts: -i -I -E --pedantic
+
+[mailer]
+fromaddr: debomatic@debomatic.debian.net
+smtphost: 172.17.11.200
+smtpport: 25
+authrequired: 0
+smtpuser: user
+smtppass: pass
+success: /home/debomatic/debomatic/etc/debomatic/mailer/build_success.mail-template
+failure: /home/debomatic/debomatic/etc/debomatic/mailer/build_failure.mail-template
+lintlog: 0
+
+[piuparts]
+piupopts: --log-level=info
+
+[jsonlogger]
+jsonfile = /var/log/debomatic-armel.json
+
+[internals]
+configversion: 012a
