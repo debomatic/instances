@@ -21,11 +21,11 @@ modulespath: /home/debomatic/debomatic/modules
 
 [runtime]
 distblacklist: oldstable
-alwaysupdate: unstable experimental trusty
+alwaysupdate: unstable experimental utopic
 modulesblacklist: Mailer
 mapper = {'sid':'unstable',
           'testing-proposed-updates':'testing',
-          'trusty-proposed':'trusty'}
+          'utopic-proposed':'utopic'}
 
 [lintian]
 lintopts: -i -I -E --pedantic
