@@ -2,7 +2,7 @@
 builder: cowbuilder
 debootstrap: debootstrap
 packagedir: /srv/debomatic-amd64
-configdir: /home/debomatic/config/distributions
+configdir: /home/debomatic/config/distributions/amd64
 architecture: system
 pbuilderhooks: /home/debomatic/debomatic/pbuilderhooks
 maxbuilds: 4

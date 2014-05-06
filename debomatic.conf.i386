@@ -2,7 +2,7 @@
 builder: cowbuilder
 debootstrap: debootstrap
 packagedir: /srv/debomatic-i386
-configdir: /home/debomatic/config/distributions
+configdir: /home/debomatic/config/distributions/i386
 architecture: i386
 pbuilderhooks: /home/debomatic/debomatic/pbuilderhooks
 maxbuilds: 4

@@ -2,7 +2,7 @@
 builder: cowbuilder
 debootstrap: qemu-debootstrap
 packagedir: /srv/debomatic-powerpc
-configdir: /home/debomatic/config/distributions
+configdir: /home/debomatic/config/distributions/powerpc
 architecture: powerpc
 pbuilderhooks: /home/debomatic/config/pbuilderhooks
 maxbuilds: 1

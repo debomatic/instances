@@ -2,7 +2,7 @@
 builder: cowbuilder
 debootstrap: qemu-debootstrap
 packagedir: /srv/debomatic-armel
-configdir: /home/debomatic/config/distributions
+configdir: /home/debomatic/config/distributions/armel
 architecture: armel
 pbuilderhooks: /opt
 maxbuilds: 1

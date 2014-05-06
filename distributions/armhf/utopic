@@ -1,0 +1,8 @@
+DISTRIBUTION=utopic
+MIRRORSITE=http://archive.ubuntu.com/ubuntu
+OTHERMIRROR="deb http://archive.ubuntu.com/ubuntu/ utopic-updates main restricted universe multiverse | deb http://security.ubuntu.com/ubuntu utopic-security main restricted universe multiverse | deb deb http://debomatic-armhf.debian.net/debomatic/utopic utopic main"
+COMPONENTS="main restricted universe multiverse"
+DEBOOTSTRAP=debootstrap
+DEBOOTSTRAPOPTS=('--variant=buildd' '--keyring' '/usr/share/keyrings/ubuntu-archive-keyring.gpg')
+EXTRAPACKAGES="pkgbinarymangler pkg-create-dbgsym"
+ALLOWUNTRUSTED=yes
