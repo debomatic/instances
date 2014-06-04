@@ -5,7 +5,8 @@ from shutil import rmtree
 from time import time
 
 basedirs = ('/srv/debomatic-amd64', '/srv/debomatic-i386',
-            '/srv/debomatic-armel', '/srv/debomatic-armhf')
+            '/srv/debomatic-armel', '/srv/debomatic-armhf',
+            '/srv/debomatic-powerpc')
 delta = 3*24*60*60
 ctime = time()
 
