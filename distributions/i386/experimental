@@ -1,7 +1,7 @@
 DISTRIBUTION=unstable
 MIRRORSITE=http://ftp.debian.org/debian
-OTHERMIRROR="deb http://ftp.debian.org/debian/ experimental main contrib non-free | deb http://debomatic-i386.debian.net/debomatic/experimental experimental main"
 COMPONENTS="main contrib non-free"
+OTHERMIRROR="deb $MIRRORSITE $DISTRIBUTION $COMPONENTS | deb http://ftp.debian.org/debian/ experimental main contrib non-free | deb http://debomatic-i386.debian.net/debomatic/experimental experimental main"
 DEBOOTSTRAP=debootstrap
 DEBOOTSTRAPOPTS=('--variant=buildd' '--keyring' '/usr/share/keyrings/debian-archive-keyring.gpg')
 ALLOWUNTRUSTED=yes
