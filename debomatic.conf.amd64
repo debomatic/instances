@@ -27,6 +27,9 @@ mapper = {'sid':'unstable',
           'testing-proposed-updates':'testing',
           'utopic-proposed':'utopic'}
 
+[blhc]
+blhcopts: --all
+
 [lintian]
 lintopts: -i -I -E --pedantic
 
