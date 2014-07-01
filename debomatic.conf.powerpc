@@ -22,7 +22,7 @@ modulespath: /home/debomatic/debomatic/modules
 [runtime]
 distblacklist: oldstable
 alwaysupdate: unstable experimental utopic
-modulesblacklist: Lintian Mailer Piuparts
+modulesblacklist: Blhc, Lintian Mailer Piuparts
 mapper = {'sid':'unstable',
           'testing-proposed-updates':'testing',
           'utopic-proposed':'utopic'}
