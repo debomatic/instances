@@ -53,4 +53,4 @@ secring: /home/debomatic/config/keyring-private/secring.gpg
 jsonfile = /var/log/debomatic-powerpc.json
 
 [internals]
-configversion: 012a
+configversion: 013a
