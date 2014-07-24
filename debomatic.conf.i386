@@ -52,6 +52,11 @@ gpgkey: 0xF4914DAB
 pubring: /home/debomatic/config/keyring-private/pubring.gpg
 secring: /home/debomatic/config/keyring-private/secring.gpg
 
+[autopkgtest]
+options = --no-built-binaries
+logging = True
+gpghome = /home/debomatic/config/keyring
+
 [jsonlogger]
 jsonfile = /var/log/debomatic-i386.json
 

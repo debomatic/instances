@@ -22,7 +22,7 @@ modulespath: /home/debomatic/debomatic/modules
 [runtime]
 distblacklist: oldstable
 alwaysupdate: unstable experimental utopic
-modulesblacklist: Blhc Lintian Mailer Piuparts
+modulesblacklist: AutoPkgTest Blhc Lintian Mailer Piuparts
 mapper = {'sid':'unstable',
           'testing-proposed-updates':'testing',
           'utopic-proposed':'utopic'}
@@ -48,6 +48,11 @@ piupopts: --log-level=info
 gpgkey: 0xF4914DAB
 pubring: /home/debomatic/config/keyring-private/pubring.gpg
 secring: /home/debomatic/config/keyring-private/secring.gpg
+
+[autopkgtest]
+options = --no-built-binaries
+logging = True
+gpghome = /home/debomatic/config/keyring
 
 [jsonlogger]
 jsonfile = /var/log/debomatic-armel.json
