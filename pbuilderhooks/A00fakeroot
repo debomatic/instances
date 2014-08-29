@@ -1,6 +1,6 @@
 #!/bin/sh
 
-architectures="powerpc"
+architectures="powerpc s390x"
 buildarch=`dpkg-architecture -qDEB_BUILD_ARCH`
 
 echo $architectures | grep -q $buildarch
