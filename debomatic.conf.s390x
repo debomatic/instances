@@ -4,7 +4,7 @@ debootstrap: qemu-debootstrap
 packagedir: /srv/debomatic-s390x
 configdir: /home/debomatic/config/distributions/s390x
 architecture: s390x
-pbuilderhooks: /opt
+pbuilderhooks: /home/debomatic/config/pbuilderhooks
 maxbuilds: 1
 inotify: 1
 sleep: 60
