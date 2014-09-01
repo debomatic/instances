@@ -5,7 +5,7 @@ packagedir: /srv/debomatic-powerpc
 configdir: /home/debomatic/config/distributions/powerpc
 architecture: powerpc
 pbuilderhooks: /home/debomatic/config/pbuilderhooks
-maxbuilds: 1
+maxbuilds: 3
 inotify: 1
 sleep: 60
 logfile: /var/log/debomatic-powerpc.log

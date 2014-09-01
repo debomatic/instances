@@ -5,7 +5,7 @@ packagedir: /srv/debomatic-amd64
 configdir: /home/debomatic/config/distributions/amd64
 architecture: system
 pbuilderhooks: /home/debomatic/debomatic/pbuilderhooks
-maxbuilds: 4
+maxbuilds: 5
 inotify: 1
 sleep: 60
 logfile: /var/log/debomatic-amd64.log

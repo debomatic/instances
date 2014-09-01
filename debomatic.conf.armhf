@@ -5,7 +5,7 @@ packagedir: /srv/debomatic-armhf
 configdir: /home/debomatic/config/distributions/armhf
 architecture: armhf
 pbuilderhooks: /opt
-maxbuilds: 1
+maxbuilds: 3
 inotify: 1
 sleep: 60
 logfile: /var/log/debomatic-armhf.log

@@ -5,7 +5,7 @@ packagedir: /srv/debomatic-armel
 configdir: /home/debomatic/config/distributions/armel
 architecture: armel
 pbuilderhooks: /opt
-maxbuilds: 1
+maxbuilds: 3
 inotify: 1
 sleep: 60
 logfile: /var/log/debomatic-armel.log
