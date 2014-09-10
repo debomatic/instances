@@ -18,6 +18,7 @@ keyring: /home/debomatic/config/keyring/debomatic.gpg
 [modules]
 modules: 1
 modulespath: /home/debomatic/debomatic/modules
+maxthreads: 5
 
 [runtime]
 distblacklist: oldstable
