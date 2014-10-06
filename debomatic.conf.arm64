@@ -1,0 +1,62 @@
+[default]
+builder: cowbuilder
+debootstrap: qemu-debootstrap
+packagedir: /srv/debomatic-arm64
+configdir: /home/debomatic/config/distributions/arm64
+architecture: arm64
+pbuilderhooks: /opt
+maxbuilds: 3
+inotify: 1
+sleep: 60
+logfile: /var/log/debomatic-arm64.log
+loglevel: info
+
+[gpg]
+gpg: 1
+keyring: /home/debomatic/config/keyring/debomatic.gpg
+
+[modules]
+modules: 1
+modulespath: /home/debomatic/debomatic/modules
+maxthreads: 5
+
+[runtime]
+distblacklist: oldstable
+alwaysupdate: unstable experimental utopic
+modulesblacklist: Mailer
+mapper = {'sid':'unstable',
+          'testing-proposed-updates':'testing',
+          'utopic-proposed':'utopic'}
+
+[lintian]
+lintopts: -i -I -E --pedantic
+
+[mailer]
+fromaddr: debomatic@debomatic.debian.net
+smtphost: 172.17.11.200
+smtpport: 25
+authrequired: 0
+smtpuser: user
+smtppass: pass
+success: /home/debomatic/debomatic/etc/debomatic/mailer/build_success.mail-template
+failure: /home/debomatic/debomatic/etc/debomatic/mailer/build_failure.mail-template
+lintlog: 0
+
+[piuparts]
+piupopts: --log-level=info
+
+[repository]
+gpgkey: 0xF4914DAB
+pubring: /home/debomatic/config/keyring-private/pubring.gpg
+secring: /home/debomatic/config/keyring-private/secring.gpg
+
+[autopkgtest]
+options = --no-built-binaries
+logging = True
+gpghome = /home/debomatic/config/keyring-private
+
+[jsonlogger]
+jsonfile = /var/log/debomatic-arm64.json
+
+[internals]
+configversion: 013a

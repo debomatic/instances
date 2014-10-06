@@ -1,7 +1,7 @@
 #!/bin/bash
 
 base='amd64'
-declare -a architectures=('i386' 'armel' 'armhf' 'powerpc' 's390x')
+declare -a architectures=('i386' 'arm64' 'armel' 'armhf' 'powerpc' 's390x')
 
 for arch in "${architectures[@]}"
 do
