@@ -22,11 +22,11 @@ maxthreads: 5
 
 [runtime]
 distblacklist: oldstable
-alwaysupdate: unstable experimental utopic
+alwaysupdate: unstable experimental vivid
 modulesblacklist: Mailer
 mapper = {'sid':'unstable',
           'testing-proposed-updates':'testing',
-          'utopic-proposed':'utopic'}
+          'vivid-proposed':'vivid'}
 
 [lintian]
 lintopts: -i -I -E --pedantic
