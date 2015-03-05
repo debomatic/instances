@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exit 0
+
 base='amd64'
 declare -a architectures=('i386' 'arm64' 'armel' 'armhf' 'powerpc' 's390x')
 declare -a ubuntuarchive=('amd64' 'i386')

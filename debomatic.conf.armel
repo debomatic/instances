@@ -1,62 +1,51 @@
-[default]
-builder: cowbuilder
+[debomatic]
+incoming: /srv/debomatic-armel
 debootstrap: qemu-debootstrap
-packagedir: /srv/debomatic-armel
-configdir: /home/debomatic/config/distributions/armel
 architecture: armel
-pbuilderhooks: /opt
-maxbuilds: 3
-inotify: 1
+threads: 3
+inotify: True
 sleep: 60
 logfile: /var/log/debomatic-armel.log
 loglevel: info
 
+[distributions]
+list: /home/debomatic/debomatic/etc/debomatic/distributions/armel
+blacklist:
+mapper: {'sid': 'unstable',
+         'jessie': 'testing',
+         'wheezy': 'stable'}
+
+[chroots]
+profile: debomatic
+commands: /home/debomatic/debomatic/sbuildcommands
+
 [gpg]
-gpg: 1
+gpg: True
 keyring: /home/debomatic/config/keyring/debomatic.gpg
 
 [modules]
-modules: 1
-modulespath: /home/debomatic/debomatic/modules
-maxthreads: 5
+modules: True
+path: /home/debomatic/debomatic/modules
+threads: 5
+blacklist: Mailer
 
-[runtime]
-distblacklist: oldstable
-alwaysupdate: unstable experimental vivid
-modulesblacklist: Mailer
-mapper = {'sid':'unstable',
-          'testing-proposed-updates':'testing',
-          'vivid-proposed':'vivid'}
+[autopkgtest]
+options = --no-built-binaries
+gpghome = /home/debomatic/config/keyring-private
+
+[blhc]
+options: --all
 
 [lintian]
-lintopts: -i -I -E --pedantic
-
-[mailer]
-fromaddr: debomatic@debomatic.debian.net
-smtphost: 172.17.11.200
-smtpport: 25
-authrequired: 0
-smtpuser: user
-smtppass: pass
-success: /home/debomatic/debomatic/etc/debomatic/mailer/build_success.mail-template
-failure: /home/debomatic/debomatic/etc/debomatic/mailer/build_failure.mail-template
-lintlog: 0
+options: -i -I -E --pedantic
 
 [piuparts]
-piupopts: --log-level=info
+options: --log-level=info
 
 [repository]
 gpgkey: 0xF4914DAB
 pubring: /home/debomatic/config/keyring-private/pubring.gpg
 secring: /home/debomatic/config/keyring-private/secring.gpg
 
-[autopkgtest]
-options = --no-built-binaries
-logging = True
-gpghome = /home/debomatic/config/keyring-private
-
 [jsonlogger]
 jsonfile = /var/log/debomatic-armel.json
-
-[internals]
-configversion: 013a

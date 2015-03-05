@@ -4,7 +4,7 @@ ConditionPathExists=/home/debomatic/config/debomatic.conf.%i
 
 [Service]
 Type=simple
-ExecStart=/home/debomatic/debomatic/debomatic -c /home/debomatic/config/debomatic.conf.%i -n
+ExecStart=/home/debomatic/debomatic/debomatic -c /home/debomatic/config/debomatic.conf.%i -i
 ExecStop=/home/debomatic/debomatic/debomatic -c /home/debomatic/config/debomatic.conf.%i -q
 KillMode=process
 SendSIGKILL=no
