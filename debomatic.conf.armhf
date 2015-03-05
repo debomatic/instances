@@ -9,7 +9,7 @@ logfile: /var/log/debomatic-armhf.log
 loglevel: info
 
 [distributions]
-list: /home/debomatic/debomatic/etc/debomatic/distributions/armhf
+list: /home/debomatic/config/distributions/armhf
 blacklist:
 mapper: {'sid': 'unstable',
          'jessie': 'testing',

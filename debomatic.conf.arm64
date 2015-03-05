@@ -9,7 +9,7 @@ logfile: /var/log/debomatic-arm64.log
 loglevel: info
 
 [distributions]
-list: /home/debomatic/debomatic/etc/debomatic/distributions/arm64
+list: /home/debomatic/config/distributions/arm64
 blacklist:
 mapper: {'sid': 'unstable',
          'jessie': 'testing',

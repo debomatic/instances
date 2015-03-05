@@ -9,7 +9,7 @@ logfile: /var/log/debomatic-s390x.log
 loglevel: info
 
 [distributions]
-list: /home/debomatic/debomatic/etc/debomatic/distributions/s390x
+list: /home/debomatic/config/distributions/s390x
 blacklist:
 mapper: {'sid': 'unstable',
          'jessie': 'testing',

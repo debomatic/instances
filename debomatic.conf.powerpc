@@ -9,7 +9,7 @@ logfile: /var/log/debomatic-powerpc.log
 loglevel: info
 
 [distributions]
-list: /home/debomatic/debomatic/etc/debomatic/distributions/powerpc
+list: /home/debomatic/config/distributions/powerpc
 blacklist:
 mapper: {'sid': 'unstable',
          'jessie': 'testing',

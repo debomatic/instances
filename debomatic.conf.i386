@@ -9,7 +9,7 @@ logfile: /var/log/debomatic-i386.log
 loglevel: info
 
 [distributions]
-list: /home/debomatic/debomatic/etc/debomatic/distributions/i386
+list: /home/debomatic/config/distributions/i386
 blacklist:
 mapper: {'sid': 'unstable',
          'jessie': 'testing',

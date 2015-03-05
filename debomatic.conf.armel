@@ -9,7 +9,7 @@ logfile: /var/log/debomatic-armel.log
 loglevel: info
 
 [distributions]
-list: /home/debomatic/debomatic/etc/debomatic/distributions/armel
+list: /home/debomatic/config/distributions/armel
 blacklist:
 mapper: {'sid': 'unstable',
          'jessie': 'testing',
