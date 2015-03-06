@@ -1,6 +1,6 @@
 [Unit]
 Description=Automatic build machine for Debian source package
-ConditionPathExists=/home/debomatic/config/debomatic.conf.%i
+ConditionPathExists=/home/debomatic/config/architectures/%i
 
 [Service]
 Type=simple
