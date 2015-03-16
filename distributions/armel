@@ -49,5 +49,5 @@ suite: precise
 mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
 extramirrors: deb http://ports.ubuntu.com precise-updates main restricted universe multiverse
-              deb http://security.ubuntu.com/ubuntu precise-security main restricted universe multiverse
+              deb http://ports.ubuntu.com precise-security main restricted universe multiverse
 extrapackages: pkgbinarymangler pkg-create-dbgsym
