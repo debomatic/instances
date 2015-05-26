@@ -12,8 +12,13 @@ loglevel: info
 list: /home/debomatic/config/distributions/arm64
 blacklist:
 mapper: {'sid': 'unstable',
-         'jessie': 'testing',
-         'wheezy': 'stable'}
+         'stretch': 'testing',
+         'jessie': 'stable',
+         'proposed-updates': 'stable',
+         'jessie-security': 'stable',
+         'wheezy': 'oldstable',
+         'oldstable-proposed-updates': 'oldstable',
+         'wheezy-security': 'oldstable'}
 
 [chroots]
 profile: debomatic
