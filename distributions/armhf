@@ -69,14 +69,6 @@ extramirrors: deb http://ports.ubuntu.com vivid-updates main restricted universe
               deb http://ports.ubuntu.com vivid-security main restricted universe multiverse
 extrapackages: pkgbinarymangler pkg-create-dbgsym
 
-[utopic]
-suite: utopic
-mirror: http://ports.ubuntu.com
-components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com utopic-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com utopic-security main restricted universe multiverse
-extrapackages: pkgbinarymangler pkg-create-dbgsym
-
 [trusty]
 suite: trusty
 mirror: http://ports.ubuntu.com
