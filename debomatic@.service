@@ -10,6 +10,7 @@ KillMode=process
 SendSIGKILL=no
 TimeoutStopSec=0
 Restart=on-failure
+Nice=19
 
 [Install]
 WantedBy=multi-user.target
