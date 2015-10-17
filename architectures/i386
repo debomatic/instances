@@ -18,7 +18,9 @@ mapper: {'sid': 'unstable',
          'jessie-security': 'stable',
          'wheezy': 'oldstable',
          'oldstable-proposed-updates': 'oldstable',
-         'wheezy-security': 'oldstable'}
+         'wheezy-security': 'oldstable',
+         'jessie-backports-sloppy': 'jessie-backports',
+         'wheezy-backports-sloppy': 'wheezy-backports'}
 
 [chroots]
 profile: debomatic
