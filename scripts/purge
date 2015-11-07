@@ -1,0 +1,35 @@
+#!/usr/bin/python3
+
+import os
+from glob import glob
+from shutil import rmtree
+from subprocess import check_output as call
+
+
+basedirs = ('/srv/debomatic-amd64', '/srv/debomatic-i386',
+            '/srv/debomatic-arm64', '/srv/debomatic-armel',
+            '/srv/debomatic-armhf', '/srv/debomatic-powerpc',
+            '/srv/debomatic-mips', '/srv/debomatic-mipsel',
+            '/srv/debomatic-s390x')
+
+def purge_chroot(distribution, architecture):
+    chroots = call(['/usr/bin/schroot', '--all-chroots', '-l'])
+    sessions = call(['/usr/bin/schroot', '--all-sessions', '-l'])
+    chroot = '%s-%s-debomatic' % (distribution, architecture)
+    if chroot in chroots.decode('utf-8'):
+        if chroot not in sessions.decode('utf-8'):
+            for basedir in ('/etc/schroot/chroot.d', '/etc/sbuild/chroot'):
+                for pattern in ('%s*' % chroot, '*-%s-%s-debomatic*' %
+                                (architecture, distribution)):
+                    for dir in glob(os.path.join(basedir, pattern)):
+                        os.unlink(dir)
+            rmtree('/srv/debomatic-%s/%s' % (architecture, distribution))
+
+for basedir in basedirs:
+    if not os.path.isdir(basedir):
+        continue
+    for distribution in os.listdir(basedir):
+        dir = os.path.join(basedir, distribution, 'pool')
+        if os.path.isdir(dir):
+            if not os.listdir(dir):
+                purge_chroot(distribution, basedir.split('-')[1])
