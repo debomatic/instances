@@ -1,0 +1,19 @@
+# Debian
+
+[unstable]
+suite: unstable
+mirror: http://ftp.debian.org/debian
+components: main contrib non-free
+extramirrors: deb http://debomatic-mips64el.debian.net/debomatic/unstable unstable main
+
+[experimental]
+suite: unstable
+mirror: http://ftp.debian.org/debian
+components: main contrib non-free
+extramirrors: deb http://ftp.debian.org/debian/ experimental main contrib non-free
+              deb http://debomatic-mips64el.debian.net/debomatic/experimental experimental main
+
+[testing]
+suite: testing
+mirror: http://ftp.debian.org/debian
+components: main contrib non-free

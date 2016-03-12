@@ -1,0 +1,49 @@
+[debomatic]
+incoming: /srv/debomatic-mips64el
+debootstrap: qemu-debootstrap
+architecture: mips64el
+threads: 3
+inotify: True
+sleep: 60
+logfile: /var/log/debomatic-mips64el.log
+loglevel: info
+
+[distributions]
+list: /home/debomatic/config/distributions/mips64el
+blacklist:
+mapper: {'sid': 'unstable',
+         'stretch': 'testing'}
+
+[chroots]
+profile: debomatic
+commands: /home/debomatic/debomatic/sbuildcommands
+
+[gpg]
+gpg: True
+keyring: /home/debomatic/config/keyring/debomatic.gpg
+
+[modules]
+modules: True
+path: /home/debomatic/debomatic/modules
+threads: 5
+blacklist: Mailer
+
+[autopkgtest]
+options = --no-built-binaries
+
+[blhc]
+options: --all
+
+[lintian]
+options: -i -I -E --pedantic
+
+[piuparts]
+options: --log-level=info
+
+[repository]
+gpgkey: 0xF4914DAB
+pubring: /home/debomatic/config/keyring-private/pubring.gpg
+secring: /home/debomatic/config/keyring-private/secring.gpg
+
+[jsonlogger]
+jsonfile = /var/log/debomatic-mips64el.json
