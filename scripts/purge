@@ -8,9 +8,10 @@ from subprocess import check_output as call
 
 basedirs = ('/srv/debomatic-amd64', '/srv/debomatic-i386',
             '/srv/debomatic-arm64', '/srv/debomatic-armel',
-            '/srv/debomatic-armhf', '/srv/debomatic-powerpc',
-            '/srv/debomatic-mips', '/srv/debomatic-mipsel',
-            '/srv/debomatic-mips64el', '/srv/debomatic-s390x')
+            '/srv/debomatic-armhf', '/srv/debomatic-mips',
+            '/srv/debomatic-mips64el', '/srv/debomatic-mipsel',
+            '/srv/debomatic-powerpc', '/srv/debomatic-ppc64el',
+            '/srv/debomatic-s390x')
 
 def purge_chroot(distribution, architecture):
     chroots = call(['/usr/bin/schroot', '--all-chroots', '-l'])
