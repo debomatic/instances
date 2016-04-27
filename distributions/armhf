@@ -52,6 +52,15 @@ extramirrors: deb http://security.debian.org/ wheezy/updates main contrib non-fr
 
 # Ubuntu
 
+[yakkety]
+suite: yakkety
+mirror: http://ports.ubuntu.com
+components: main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com yakkety-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com yakkety-security main restricted universe multiverse
+              deb http://debomatic-armhf.debian.net/debomatic/yakkety yakkety main
+extrapackages: pkgbinarymangler pkg-create-dbgsym
+
 [xenial]
 suite: xenial
 mirror: http://ports.ubuntu.com
