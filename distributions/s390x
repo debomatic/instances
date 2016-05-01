@@ -47,3 +47,25 @@ components: main contrib non-free
 extramirrors: deb http://security.debian.org/ wheezy/updates main contrib non-free
               deb http://ftp.debian.org/debian wheezy-updates main contrib non-free
               deb http://ftp.debian.org/debian wheezy-backports main contrib non-free
+
+
+
+# Ubuntu
+
+[yakkety]
+suite: yakkety
+mirror: http://ports.ubuntu.com
+components: main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com yakkety-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com yakkety-security main restricted universe multiverse
+              deb http://debomatic-powerpc.debian.net/debomatic/yakkety yakkety main
+extrapackages: pkgbinarymangler pkg-create-dbgsym
+
+[xenial]
+suite: xenial
+mirror: http://ports.ubuntu.com
+components: main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com xenial-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com xenial-security main restricted universe multiverse
+              deb http://debomatic-powerpc.debian.net/debomatic/xenial xenial main
+extrapackages: pkgbinarymangler pkg-create-dbgsym

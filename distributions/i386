@@ -51,6 +51,15 @@ extramirrors: deb http://security.debian.org/ wheezy/updates main contrib non-fr
 
 # Ubuntu
 
+[yakkety]
+suite: yakkety
+mirror: http://archive.ubuntu.com/ubuntu
+components: main restricted universe multiverse
+extramirrors: deb http://archive.ubuntu.com/ubuntu/ yakkety-updates main restricted universe multiverse
+              deb http://security.ubuntu.com/ubuntu yakkety-security main restricted universe multiverse
+              deb http://debomatic-amd64.debian.net/debomatic/yakkety yakkety main
+extrapackages: pkgbinarymangler pkg-create-dbgsym
+
 [xenial]
 suite: xenial
 mirror: http://archive.ubuntu.com/ubuntu
@@ -66,14 +75,6 @@ mirror: http://archive.ubuntu.com/ubuntu
 components: main restricted universe multiverse
 extramirrors: deb http://archive.ubuntu.com/ubuntu/ wily-updates main restricted universe multiverse
               deb http://security.ubuntu.com/ubuntu wily-security main restricted universe multiverse
-extrapackages: pkgbinarymangler pkg-create-dbgsym
-
-[vivid]
-suite: vivid
-mirror: http://archive.ubuntu.com/ubuntu
-components: main restricted universe multiverse
-extramirrors: deb http://archive.ubuntu.com/ubuntu/ vivid-updates main restricted universe multiverse
-              deb http://security.ubuntu.com/ubuntu vivid-security main restricted universe multiverse
 extrapackages: pkgbinarymangler pkg-create-dbgsym
 
 [trusty]
