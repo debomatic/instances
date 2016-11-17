@@ -4,14 +4,14 @@
 suite: unstable
 mirror: http://ftp.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://debomatic-powerpc.debian.net/debomatic/unstable unstable main
+extramirrors: deb http://debomatic-ppc64el.debian.net/debomatic/unstable unstable main
 
 [experimental]
 suite: unstable
 mirror: http://ftp.debian.org/debian
 components: main contrib non-free
 extramirrors: deb http://ftp.debian.org/debian/ experimental main contrib non-free
-              deb http://debomatic-powerpc.debian.net/debomatic/experimental experimental main
+              deb http://debomatic-ppc64el.debian.net/debomatic/experimental experimental main
 
 [testing]
 suite: testing
