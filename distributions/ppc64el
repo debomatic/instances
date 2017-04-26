@@ -37,6 +37,15 @@ extramirrors: deb http://security.debian.org/ jessie/updates main contrib non-fr
 
 # Ubuntu
 
+[artful]
+suite: artful
+mirror: http://ports.ubuntu.com
+components: main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com artful-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com artful-security main restricted universe multiverse
+              deb http://debomatic-ppc64el.debian.net/debomatic/artful artful main
+extrapackages: pkgbinarymangler
+
 [zesty]
 suite: zesty
 mirror: http://ports.ubuntu.com
