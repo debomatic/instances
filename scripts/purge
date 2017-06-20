@@ -24,8 +24,9 @@ def purge_chroot(distribution, basedir, empty):
                 for pattern in ('%s*' % chroot, '*-%s-%s-debomatic*' %
                                 (architecture, distribution)):
                     for dir in glob(os.path.join(basedir, pattern)):
+                        if os.path.islink(dir):
+                            rmtree(os.readlink(dir))
                         os.unlink(dir)
-            rmtree(os.path.join(basedir, distribution, distribution))
     if empty:
         rmtree('/srv/debomatic-%s/%s' % (architecture, distribution))
 
