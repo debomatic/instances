@@ -12,7 +12,11 @@ loglevel: info
 list: /home/debomatic/config/distributions/mips64el
 blacklist:
 mapper: {'sid': 'unstable',
-         'stretch': 'testing'}
+         'buster': 'testing',
+         'stretch': 'stable',
+         'proposed-updates': 'stable',
+         'stretch-security': 'stable',
+         'stretch-backports-sloppy': 'stretch-backports'}
 
 [chroots]
 profile: debomatic

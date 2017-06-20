@@ -12,15 +12,15 @@ loglevel: info
 list: /home/debomatic/config/distributions/i386
 blacklist:
 mapper: {'sid': 'unstable',
-         'stretch': 'testing',
-         'jessie': 'stable',
+         'buster': 'testing',
+         'stretch': 'stable',
+         'jessie': 'oldstable',
          'proposed-updates': 'stable',
-         'jessie-security': 'stable',
-         'wheezy': 'oldstable',
          'oldstable-proposed-updates': 'oldstable',
-         'wheezy-security': 'oldstable',
-         'jessie-backports-sloppy': 'jessie-backports',
-         'wheezy-backports-sloppy': 'wheezy-backports'}
+         'stretch-security': 'stable',
+         'jessie-security': 'oldstable',
+         'stretch-backports-sloppy': 'stretch-backports',
+         'jessie-backports-sloppy': 'jessie-backports'}
 
 [chroots]
 profile: debomatic
