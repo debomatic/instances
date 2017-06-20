@@ -2,43 +2,51 @@
 
 [unstable]
 suite: unstable
-mirror: http://ftp.debian.org/debian
+mirror: http://deb.debian.org/debian
 components: main contrib non-free
 extramirrors: deb http://debomatic-i386.debian.net/debomatic/unstable unstable main
 
 [experimental]
 suite: unstable
-mirror: http://ftp.debian.org/debian
+mirror: http://deb.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://ftp.debian.org/debian/ experimental main contrib non-free
+extramirrors: deb http://deb.debian.org/debian/ experimental main contrib non-free
               deb http://debomatic-i386.debian.net/debomatic/experimental experimental main
 
 [testing]
 suite: testing
-mirror: http://ftp.debian.org/debian
+mirror: http://deb.debian.org/debian
 components: main contrib non-free
 
 [stable]
 suite: stable
-mirror: http://ftp.debian.org/debian
+mirror: http://deb.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://security.debian.org/ stable/updates main contrib non-free
-              deb http://ftp.debian.org/debian stable-updates main contrib non-free
+extramirrors: deb http://deb.debian.org/debian-security stable/updates main contrib non-free
+              deb http://deb.debian.org/debian stable-updates main contrib non-free
 
 [oldstable]
 suite: oldstable
-mirror: http://ftp.debian.org/debian
+mirror: http://deb.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://security.debian.org/ oldstable/updates main contrib non-free
-              deb http://ftp.debian.org/debian oldstable-updates main contrib non-free
+extramirrors: deb http://deb.debian.org/debian-security oldstable/updates main contrib non-free
+              deb http://deb.debian.org/debian oldstable-updates main contrib non-free
+
+[stretch-backports]
+suite: stretch
+mirror: http://deb.debian.org/debian
+components: main contrib non-free
+extramirrors: deb http://deb.debian.org/debian-security stretch/updates main contrib non-free
+              deb http://deb.debian.org/debian stretch-updates main contrib non-free
+              deb http://deb.debian.org/debian stretch-backports main contrib non-free
 
 [jessie-backports]
 suite: jessie
-mirror: http://ftp.debian.org/debian
+mirror: http://deb.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://security.debian.org/ jessie/updates main contrib non-free
-              deb http://ftp.debian.org/debian jessie-updates main contrib non-free
-              deb http://ftp.debian.org/debian jessie-backports main contrib non-free
+extramirrors: deb http://deb.debian.org/debian-security jessie/updates main contrib non-free
+              deb http://deb.debian.org/debian jessie-updates main contrib non-free
+              deb http://deb.debian.org/debian jessie-backports main contrib non-free
 
 
 # Ubuntu
