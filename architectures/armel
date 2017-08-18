@@ -26,6 +26,11 @@ mapper: {'sid': 'unstable',
 profile: debomatic
 commands: /home/debomatic/debomatic/sbuildcommands
 
+[dpr]
+dpr: True
+prefix: dpr
+repository: deb http://debomatic-armel.debian.net/debomatic/%%(dist)s %%(dist)s main
+
 [gpg]
 gpg: True
 keyring: /home/debomatic/config/keyring/debomatic.gpg
