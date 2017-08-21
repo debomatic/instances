@@ -15,10 +15,13 @@ mapper: {'sid': 'unstable',
          'buster': 'testing',
          'stretch': 'stable',
          'jessie': 'oldstable',
+         'wheezy': 'oldoldstable',
          'proposed-updates': 'stable',
          'oldstable-proposed-updates': 'oldstable',
+         'oldoldstable-proposed-updates': 'oldoldstable',
          'stretch-security': 'stable',
          'jessie-security': 'oldstable',
+         'wheezy-security': 'oldoldstable',
          'stretch-backports-sloppy': 'stretch-backports',
          'jessie-backports-sloppy': 'jessie-backports'}
 
