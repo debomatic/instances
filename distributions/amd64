@@ -58,13 +58,21 @@ extramirrors: deb http://deb.debian.org/debian-security jessie/updates main cont
 
 # Ubuntu
 
+[bionic]
+suite: bionic
+mirror: http://archive.ubuntu.com/ubuntu
+components: main restricted universe multiverse
+extramirrors: deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse
+              deb http://security.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
+              deb http://debomatic-amd64.debian.net/debomatic/bionic bionic main
+extrapackages: pkgbinarymangler
+
 [artful]
 suite: artful
 mirror: http://archive.ubuntu.com/ubuntu
 components: main restricted universe multiverse
 extramirrors: deb http://archive.ubuntu.com/ubuntu/ artful-updates main restricted universe multiverse
               deb http://security.ubuntu.com/ubuntu artful-security main restricted universe multiverse
-              deb http://debomatic-amd64.debian.net/debomatic/artful artful main
 extrapackages: pkgbinarymangler
 
 [zesty]
@@ -73,14 +81,6 @@ mirror: http://archive.ubuntu.com/ubuntu
 components: main restricted universe multiverse
 extramirrors: deb http://archive.ubuntu.com/ubuntu/ zesty-updates main restricted universe multiverse
               deb http://security.ubuntu.com/ubuntu zesty-security main restricted universe multiverse
-extrapackages: pkgbinarymangler pkg-create-dbgsym
-
-[yakkety]
-suite: yakkety
-mirror: http://archive.ubuntu.com/ubuntu
-components: main restricted universe multiverse
-extramirrors: deb http://archive.ubuntu.com/ubuntu/ yakkety-updates main restricted universe multiverse
-              deb http://security.ubuntu.com/ubuntu yakkety-security main restricted universe multiverse
 extrapackages: pkgbinarymangler pkg-create-dbgsym
 
 [xenial]
