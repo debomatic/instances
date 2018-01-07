@@ -5,6 +5,7 @@ architecture: i386
 threads: 3
 inotify: True
 sleep: 60
+interval: 3600
 logfile: /var/log/debomatic-i386.log
 loglevel: info
 

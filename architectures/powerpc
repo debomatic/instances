@@ -5,6 +5,7 @@ architecture: powerpc
 threads: 3
 inotify: True
 sleep: 60
+interval: 3600
 logfile: /var/log/debomatic-powerpc.log
 loglevel: info
 

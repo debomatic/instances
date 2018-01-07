@@ -5,6 +5,7 @@ architecture: arm64
 threads: 3
 inotify: True
 sleep: 60
+interval: 3600
 logfile: /var/log/debomatic-arm64.log
 loglevel: info
 
