@@ -50,6 +50,9 @@ options: -i -I -E --pedantic
 [piuparts]
 options: --log-level=info
 
+[removechroots]
+days: 7
+
 [removepackages]
 days: 15
 
