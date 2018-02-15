@@ -66,7 +66,6 @@ days: 3
 [repository]
 gpgkey: 0xF4914DAB
 pubring: /home/debomatic/config/keyring-private/pubring.gpg
-secring: /home/debomatic/config/keyring-private/secring.gpg
 
 [jsonlogger]
 jsonfile = /var/log/debomatic-mipsel.json
