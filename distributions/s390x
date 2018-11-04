@@ -51,13 +51,21 @@ extramirrors: deb http://deb.debian.org/debian-security jessie/updates main cont
 
 # Ubuntu
 
+[disco]
+suite: disco
+mirror: http://ports.ubuntu.com/ubuntu
+components: main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com/ubuntu/ disco-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com/ubuntu disco-security main restricted universe multiverse
+              deb http://debomatic-s390x.debian.net/debomatic/disco disco main
+extrapackages: pkgbinarymangler
+
 [cosmic]
 suite: cosmic
 mirror: http://ports.ubuntu.com/ubuntu
 components: main restricted universe multiverse
 extramirrors: deb http://ports.ubuntu.com/ubuntu/ cosmic-updates main restricted universe multiverse
               deb http://ports.ubuntu.com/ubuntu cosmic-security main restricted universe multiverse
-              deb http://debomatic-s390x.debian.net/debomatic/cosmic cosmic main
 extrapackages: pkgbinarymangler
 
 [bionic]
@@ -67,22 +75,6 @@ components: main restricted universe multiverse
 extramirrors: deb http://ports.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse
               deb http://ports.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
-
-[artful]
-suite: artful
-mirror: http://ports.ubuntu.com
-components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com artful-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com artful-security main restricted universe multiverse
-extrapackages: pkgbinarymangler
-
-[zesty]
-suite: zesty
-mirror: http://ports.ubuntu.com
-components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com zesty-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com zesty-security main restricted universe multiverse
-extrapackages: pkgbinarymangler pkg-create-dbgsym
 
 [xenial]
 suite: xenial
