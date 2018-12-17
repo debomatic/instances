@@ -58,13 +58,13 @@ extramirrors: deb http://deb.debian.org/debian-security jessie/updates main cont
 
 # Ubuntu
 
-[discc]
-suite: discc
+[disco]
+suite: disco
 mirror: http://ports.ubuntu.com/ubuntu
 components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com/ubuntu/ discc-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com/ubuntu discc-security main restricted universe multiverse
-              deb http://debomatic-armhf.debian.net/debomatic/discc discc main
+extramirrors: deb http://ports.ubuntu.com/ubuntu/ disco-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com/ubuntu disco-security main restricted universe multiverse
+              deb http://debomatic-armhf.debian.net/debomatic/disco disco main
 extrapackages: pkgbinarymangler
 
 [cosmic]
