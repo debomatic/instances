@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 from collections import defaultdict
+from json import load
 from os import mkdir
 from os.path import join
 from re import search
@@ -8,110 +9,8 @@ from shutil import rmtree
 
 
 distfiles = defaultdict(str)
-distributions = (
-    {'name': 'unstable',
-     'origin': 'debian',
-     'type': 'development',
-     'experimental': False,
-     'architectures': ('amd64', 'arm64', 'armel', 'armhf', 'i386', 'mips',
-                       'mips64el', 'mipsel', 'powerpc', 'ppc64el', 's390x'),
-     'ports': ()},
-
-    {'name': 'experimental',
-     'origin': 'debian',
-     'type': 'development',
-     'experimental': True,
-     'architectures': ('amd64', 'arm64', 'armel', 'armhf', 'i386', 'mips',
-                       'mips64el', 'mipsel', 'powerpc', 'ppc64el', 's390x'),
-     'ports': ()},
-
-    {'name': 'testing',
-     'origin': 'debian',
-     'type': 'development',
-     'experimental': False,
-     'architectures': ('amd64', 'arm64', 'armel', 'armhf', 'i386', 'mips',
-                       'mips64el', 'mipsel', 'ppc64el', 's390x'),
-     'ports': ()},
-
-    {'name': 'stable',
-     'origin': 'debian',
-     'type': 'supported',
-     'experimental': False,
-     'architectures': ('amd64', 'arm64', 'armel', 'armhf', 'i386', 'mips',
-                       'mips64el', 'mipsel', 'ppc64el', 's390x'),
-     'ports': ()},
-
-    {'name': 'oldstable',
-     'origin': 'debian',
-     'type': 'supported',
-     'experimental': False,
-     'architectures': ('amd64', 'armel', 'armhf', 'i386'),
-     'ports': ()},
-
-    {'name': 'buster-backports',
-     'origin': 'debian',
-     'type': 'backports',
-     'experimental': False,
-     'architectures': ('amd64', 'arm64', 'armel', 'armhf', 'i386', 'mips',
-                       'mips64el', 'mipsel', 'ppc64el', 's390x'),
-     'ports': ()},
-
-    {'name': 'stretch-backports',
-     'origin': 'debian',
-     'type': 'backports',
-     'experimental': False,
-     'architectures': ('amd64', 'arm64', 'armel', 'armhf', 'i386', 'mips',
-                       'mips64el', 'mipsel', 'ppc64el', 's390x'),
-     'ports': ()},
-
-    {'name': 'jessie-backports',
-     'origin': 'debian',
-     'type': 'backports',
-     'experimental': False,
-     'architectures': ('amd64', 'armel', 'armhf', 'i386'),
-     'ports': ()},
-
-    {'name': 'eoan',
-     'origin': 'ubuntu',
-     'type': 'development',
-     'experimental': False,
-     'architectures': ('amd64', 'i386'),
-     'ports': ('arm64', 'armhf', 'ppc64el', 's390x'),
-     'extrapackages': 'pkgbinarymangler'},
-
-    {'name': 'disco',
-     'origin': 'ubuntu',
-     'type': 'supported',
-     'experimental': False,
-     'architectures': ('amd64', 'i386'),
-     'ports': ('arm64', 'armhf', 'ppc64el', 's390x'),
-     'extrapackages': 'pkgbinarymangler'},
-
-    {'name': 'bionic',
-     'origin': 'ubuntu',
-     'type': 'supported',
-     'experimental': False,
-     'architectures': ('amd64', 'i386'),
-     'ports': ('arm64', 'armhf', 'ppc64el', 's390x'),
-     'extrapackages': 'pkgbinarymangler'},
-
-    {'name': 'xenial',
-     'origin': 'ubuntu',
-     'type': 'supported',
-     'experimental': False,
-     'architectures': ('amd64', 'i386'),
-     'ports': ('arm64', 'armhf', 'powerpc', 'ppc64el', 's390x'),
-     'extrapackages': 'pkgbinarymangler pkg-create-dbgsym'},
-
-    {'name': 'trusty',
-     'origin': 'ubuntu',
-     'type': 'supported',
-     'experimental': False,
-     'architectures': ('amd64', 'i386'),
-     'ports': ('arm64', 'armhf', 'powerpc', 'ppc64el', 's390x'),
-     'extrapackages': 'pkgbinarymangler pkg-create-dbgsym'},
-)
-
+with open('distributions.json') as json_file:
+    distributions = load(json_file)
 for dist in distributions:
     for arch in (dist['architectures'] + dist['ports']):
         name = dist['name']
