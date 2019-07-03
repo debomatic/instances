@@ -10,13 +10,14 @@ extramirrors: deb http://debomatic-ppc64el.debian.net/debomatic/unstable unstabl
 suite: unstable
 mirror: http://deb.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian/ experimental main contrib non-free
+extramirrors: deb http://deb.debian.org/debian experimental main contrib non-free
               deb http://debomatic-ppc64el.debian.net/debomatic/experimental experimental main
 
 [testing]
 suite: testing
 mirror: http://deb.debian.org/debian
 components: main contrib non-free
+extramirrors: deb http://debomatic-ppc64el.debian.net/debomatic/testing testing main
 
 [stable]
 suite: stable
@@ -24,13 +25,6 @@ mirror: http://deb.debian.org/debian
 components: main contrib non-free
 extramirrors: deb http://deb.debian.org/debian-security stable/updates main contrib non-free
               deb http://deb.debian.org/debian stable-updates main contrib non-free
-
-[oldstable]
-suite: oldstable
-mirror: http://deb.debian.org/debian
-components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian-security oldstable/updates main contrib non-free
-              deb http://deb.debian.org/debian oldstable-updates main contrib non-free
 
 [buster-backports]
 suite: buster
@@ -48,13 +42,6 @@ extramirrors: deb http://deb.debian.org/debian-security stretch/updates main con
               deb http://deb.debian.org/debian stretch-updates main contrib non-free
               deb http://deb.debian.org/debian stretch-backports main contrib non-free
 
-[jessie-backports]
-suite: jessie
-mirror: http://deb.debian.org/debian
-components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian-security jessie/updates main contrib non-free
-              deb http://deb.debian.org/debian jessie-updates main contrib non-free
-              deb http://deb.debian.org/debian jessie-backports main contrib non-free
 
 
 
@@ -62,28 +49,25 @@ extramirrors: deb http://deb.debian.org/debian-security jessie/updates main cont
 
 [eoan]
 suite: eoan
-mirror: http://ports.ubuntu.com/ubuntu
+mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com/ubuntu/ eoan-updates main restricted universe multiverse
-              deb http://security.ubuntu.com/ubuntu eoan-security main restricted universe multiverse
-              deb http://debomatic-ppc64el.debian.net/debomatic/eoan eoan main
+extramirrors: deb http://debomatic-ppc64el.debian.net/debomatic/eoan eoan main
 extrapackages: pkgbinarymangler
 
 [disco]
 suite: disco
-mirror: http://ports.ubuntu.com/ubuntu
+mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com/ubuntu/ disco-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com/ubuntu disco-security main restricted universe multiverse
-              deb http://debomatic-ppc64el.debian.net/debomatic/disco disco main
+extramirrors: deb http://ports.ubuntu.com disco-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com disco-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 
 [bionic]
 suite: bionic
-mirror: http://ports.ubuntu.com/ubuntu
+mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com bionic-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com bionic-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 
 [xenial]
@@ -101,3 +85,4 @@ components: main restricted universe multiverse
 extramirrors: deb http://ports.ubuntu.com trusty-updates main restricted universe multiverse
               deb http://ports.ubuntu.com trusty-security main restricted universe multiverse
 extrapackages: pkgbinarymangler pkg-create-dbgsym
+

@@ -10,13 +10,14 @@ extramirrors: deb http://debomatic-armel.debian.net/debomatic/unstable unstable 
 suite: unstable
 mirror: http://deb.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian/ experimental main contrib non-free
+extramirrors: deb http://deb.debian.org/debian experimental main contrib non-free
               deb http://debomatic-armel.debian.net/debomatic/experimental experimental main
 
 [testing]
 suite: testing
 mirror: http://deb.debian.org/debian
 components: main contrib non-free
+extramirrors: deb http://debomatic-armel.debian.net/debomatic/testing testing main
 
 [stable]
 suite: stable
@@ -31,13 +32,6 @@ mirror: http://deb.debian.org/debian
 components: main contrib non-free
 extramirrors: deb http://deb.debian.org/debian-security oldstable/updates main contrib non-free
               deb http://deb.debian.org/debian oldstable-updates main contrib non-free
-
-[oldoldstable]
-suite: oldoldstable
-mirror: http://deb.debian.org/debian
-components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian-security oldoldstable/updates main contrib non-free
-              deb http://deb.debian.org/debian oldoldstable-updates main contrib non-free
 
 [buster-backports]
 suite: buster
@@ -62,3 +56,4 @@ components: main contrib non-free
 extramirrors: deb http://deb.debian.org/debian-security jessie/updates main contrib non-free
               deb http://deb.debian.org/debian jessie-updates main contrib non-free
               deb http://deb.debian.org/debian jessie-backports main contrib non-free
+

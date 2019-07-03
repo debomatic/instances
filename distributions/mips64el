@@ -10,13 +10,14 @@ extramirrors: deb http://debomatic-mips64el.debian.net/debomatic/unstable unstab
 suite: unstable
 mirror: http://deb.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian/ experimental main contrib non-free
+extramirrors: deb http://deb.debian.org/debian experimental main contrib non-free
               deb http://debomatic-mips64el.debian.net/debomatic/experimental experimental main
 
 [testing]
 suite: testing
 mirror: http://deb.debian.org/debian
 components: main contrib non-free
+extramirrors: deb http://debomatic-mips64el.debian.net/debomatic/testing testing main
 
 [stable]
 suite: stable
@@ -24,13 +25,6 @@ mirror: http://deb.debian.org/debian
 components: main contrib non-free
 extramirrors: deb http://deb.debian.org/debian-security stable/updates main contrib non-free
               deb http://deb.debian.org/debian stable-updates main contrib non-free
-
-[oldstable]
-suite: oldstable
-mirror: http://deb.debian.org/debian
-components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian-security oldstable/updates main contrib non-free
-              deb http://deb.debian.org/debian oldstable-updates main contrib non-free
 
 [buster-backports]
 suite: buster
@@ -47,3 +41,4 @@ components: main contrib non-free
 extramirrors: deb http://deb.debian.org/debian-security stretch/updates main contrib non-free
               deb http://deb.debian.org/debian stretch-updates main contrib non-free
               deb http://deb.debian.org/debian stretch-backports main contrib non-free
+
