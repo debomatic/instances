@@ -1,9 +1,8 @@
 [
     {
         "name": "unstable",
-        "type": "development",
-        "ports": [],
         "origin": "debian",
+        "type": "development",
         "experimental": false,
         "architectures": [
             "amd64",
@@ -17,13 +16,13 @@
             "powerpc",
             "ppc64el",
             "s390x"
-        ]
+        ],
+        "ports": []
     },
     {
         "name": "experimental",
-        "type": "development",
-        "ports": [],
         "origin": "debian",
+        "type": "development",
         "experimental": true,
         "architectures": [
             "amd64",
@@ -37,13 +36,13 @@
             "powerpc",
             "ppc64el",
             "s390x"
-        ]
+        ],
+        "ports": []
     },
     {
         "name": "testing",
-        "type": "development",
-        "ports": [],
         "origin": "debian",
+        "type": "development",
         "experimental": false,
         "architectures": [
             "amd64",
@@ -56,13 +55,13 @@
             "mipsel",
             "ppc64el",
             "s390x"
-        ]
+        ],
+        "ports": []
     },
     {
         "name": "stable",
-        "type": "supported",
-        "ports": [],
         "origin": "debian",
+        "type": "supported",
         "experimental": false,
         "architectures": [
             "amd64",
@@ -75,26 +74,26 @@
             "mipsel",
             "ppc64el",
             "s390x"
-        ]
+        ],
+        "ports": []
     },
     {
         "name": "oldstable",
-        "type": "supported",
-        "ports": [],
         "origin": "debian",
+        "type": "supported",
         "experimental": false,
         "architectures": [
             "amd64",
             "armel",
             "armhf",
             "i386"
-        ]
+        ],
+        "ports": []
     },
     {
         "name": "buster-backports",
-        "type": "backports",
-        "ports": [],
         "origin": "debian",
+        "type": "backports",
         "experimental": false,
         "architectures": [
             "amd64",
@@ -107,13 +106,13 @@
             "mipsel",
             "ppc64el",
             "s390x"
-        ]
+        ],
+        "ports": []
     },
     {
         "name": "stretch-backports",
-        "type": "backports",
-        "ports": [],
         "origin": "debian",
+        "type": "backports",
         "experimental": false,
         "architectures": [
             "amd64",
@@ -126,76 +125,78 @@
             "mipsel",
             "ppc64el",
             "s390x"
-        ]
+        ],
+        "ports": []
     },
     {
         "name": "jessie-backports",
-        "type": "backports",
-        "ports": [],
         "origin": "debian",
+        "type": "backports",
         "experimental": false,
         "architectures": [
             "amd64",
             "armel",
             "armhf",
             "i386"
-        ]
+        ],
+        "ports": []
     },
     {
         "name": "eoan",
-        "extrapackages": "pkgbinarymangler",
+        "origin": "ubuntu",
         "type": "development",
+        "architectures": [
+            "amd64",
+            "i386"
+        ],
         "ports": [
             "arm64",
             "armhf",
             "ppc64el",
             "s390x"
         ],
-        "origin": "ubuntu",
-        "experimental": false,
-        "architectures": [
-            "amd64",
-            "i386"
-        ]
+        "extrapackages": "pkgbinarymangler"
     },
     {
         "name": "disco",
-        "extrapackages": "pkgbinarymangler",
+        "origin": "ubuntu",
         "type": "supported",
+        "architectures": [
+            "amd64",
+            "i386"
+        ],
         "ports": [
             "arm64",
             "armhf",
             "ppc64el",
             "s390x"
         ],
-        "origin": "ubuntu",
-        "experimental": false,
-        "architectures": [
-            "amd64",
-            "i386"
-        ]
+        "extrapackages": "pkgbinarymangler"
     },
     {
         "name": "bionic",
-        "extrapackages": "pkgbinarymangler",
+        "origin": "ubuntu",
         "type": "supported",
+        "architectures": [
+            "amd64",
+            "i386"
+        ],
         "ports": [
             "arm64",
             "armhf",
             "ppc64el",
             "s390x"
         ],
-        "origin": "ubuntu",
-        "experimental": false,
-        "architectures": [
-            "amd64",
-            "i386"
-        ]
+        "extrapackages": "pkgbinarymangler"
     },
     {
         "name": "xenial",
-        "extrapackages": "pkgbinarymangler pkg-create-dbgsym",
+        "origin": "ubuntu",
         "type": "supported",
+        "architectures": [
+            "amd64",
+            "i386"
+        ],
         "ports": [
             "arm64",
             "armhf",
@@ -203,17 +204,16 @@
             "ppc64el",
             "s390x"
         ],
-        "origin": "ubuntu",
-        "experimental": false,
-        "architectures": [
-            "amd64",
-            "i386"
-        ]
+        "extrapackages": "pkgbinarymangler pkg-create-dbgsym"
     },
     {
         "name": "trusty",
-        "extrapackages": "pkgbinarymangler pkg-create-dbgsym",
+        "origin": "ubuntu",
         "type": "supported",
+        "architectures": [
+            "amd64",
+            "i386"
+        ],
         "ports": [
             "arm64",
             "armhf",
@@ -221,11 +221,6 @@
             "ppc64el",
             "s390x"
         ],
-        "origin": "ubuntu",
-        "experimental": false,
-        "architectures": [
-            "amd64",
-            "i386"
-        ]
+        "extrapackages": "pkgbinarymangler pkg-create-dbgsym"
     }
 ]
