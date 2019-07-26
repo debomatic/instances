@@ -26,8 +26,12 @@ for dist in distributions:
             url = 'http://deb.debian.org/debian'
             components = 'main contrib non-free'
             if dist['type'] in ('supported', 'backports'):
+                if dist['oldsecurity']:
+                    security = '{0}/updates'.format(suite)
+                else:
+                    security = '{0}-security'.format(suite)
                 extramirrors = ('deb http://deb.debian.org/debian-security ' +
-                                '{0}/updates {1}\n'.format(suite, components) +
+                                '{0} {1}\n'.format(security, components) +
                                 '              ' +
                                 'deb http://deb.debian.org/debian ' +
                                 '{0}-updates {1}'.format(suite, components))
