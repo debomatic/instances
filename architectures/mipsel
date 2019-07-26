@@ -1,4 +1,5 @@
 [debomatic]
+builduser: sbuild
 incoming: /srv/debomatic-mipsel
 debootstrap: qemu-debootstrap
 architecture: mipsel

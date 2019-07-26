@@ -1,4 +1,5 @@
 [debomatic]
+builduser: sbuild
 incoming: /srv/debomatic-ppc64el
 debootstrap: qemu-debootstrap
 architecture: ppc64el

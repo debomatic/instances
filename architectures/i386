@@ -1,4 +1,5 @@
 [debomatic]
+builduser: sbuild
 incoming: /srv/debomatic-i386
 debootstrap: debootstrap
 architecture: i386

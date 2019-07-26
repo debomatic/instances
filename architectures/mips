@@ -1,4 +1,5 @@
 [debomatic]
+builduser: sbuild
 incoming: /srv/debomatic-mips
 debootstrap: qemu-debootstrap
 architecture: mips

@@ -1,4 +1,5 @@
 [debomatic]
+builduser: sbuild
 incoming: /srv/debomatic-arm64
 debootstrap: qemu-debootstrap
 architecture: arm64

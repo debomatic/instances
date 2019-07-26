@@ -1,4 +1,5 @@
 [debomatic]
+builduser: sbuild
 incoming: /srv/debomatic-armel
 debootstrap: qemu-debootstrap
 architecture: armel
