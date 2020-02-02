@@ -123,26 +123,6 @@
         "oldsecurity": true,
         "architectures": [
             "amd64",
-            "arm64",
-            "armel",
-            "armhf",
-            "i386",
-            "mips",
-            "mips64el",
-            "mipsel",
-            "ppc64el",
-            "s390x"
-        ],
-        "ports": []
-    },
-    {
-        "name": "jessie-backports",
-        "origin": "debian",
-        "type": "backports",
-        "experimental": false,
-        "oldsecurity": true,
-        "architectures": [
-            "amd64",
             "armel",
             "armhf",
             "i386"
@@ -153,22 +133,6 @@
         "name": "eoan",
         "origin": "ubuntu",
         "type": "development",
-        "architectures": [
-            "amd64",
-            "i386"
-        ],
-        "ports": [
-            "arm64",
-            "armhf",
-            "ppc64el",
-            "s390x"
-        ],
-        "extrapackages": "pkgbinarymangler"
-    },
-    {
-        "name": "disco",
-        "origin": "ubuntu",
-        "type": "supported",
         "architectures": [
             "amd64",
             "i386"
@@ -199,23 +163,6 @@
     },
     {
         "name": "xenial",
-        "origin": "ubuntu",
-        "type": "supported",
-        "architectures": [
-            "amd64",
-            "i386"
-        ],
-        "ports": [
-            "arm64",
-            "armhf",
-            "powerpc",
-            "ppc64el",
-            "s390x"
-        ],
-        "extrapackages": "pkgbinarymangler pkg-create-dbgsym"
-    },
-    {
-        "name": "trusty",
         "origin": "ubuntu",
         "type": "supported",
         "architectures": [

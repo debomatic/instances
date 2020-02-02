@@ -26,11 +26,3 @@ extramirrors: deb http://ports.ubuntu.com xenial-updates main restricted univers
               deb http://ports.ubuntu.com xenial-security main restricted universe multiverse
 extrapackages: pkgbinarymangler pkg-create-dbgsym
 
-[trusty]
-suite: trusty
-mirror: http://ports.ubuntu.com
-components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com trusty-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com trusty-security main restricted universe multiverse
-extrapackages: pkgbinarymangler pkg-create-dbgsym
-

@@ -49,14 +49,6 @@ extramirrors: deb http://deb.debian.org/debian-security stretch/updates main con
               deb http://deb.debian.org/debian stretch-updates main contrib non-free
               deb http://deb.debian.org/debian stretch-backports main contrib non-free
 
-[jessie-backports]
-suite: jessie
-mirror: http://deb.debian.org/debian
-components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian-security jessie/updates main contrib non-free
-              deb http://deb.debian.org/debian jessie-updates main contrib non-free
-              deb http://deb.debian.org/debian jessie-backports main contrib non-free
-
 
 
 
@@ -67,14 +59,6 @@ suite: eoan
 mirror: http://archive.ubuntu.com/ubuntu
 components: main restricted universe multiverse
 extramirrors: deb http://debomatic-amd64.debian.net/debomatic/eoan eoan main
-extrapackages: pkgbinarymangler
-
-[disco]
-suite: disco
-mirror: http://archive.ubuntu.com/ubuntu
-components: main restricted universe multiverse
-extramirrors: deb http://archive.ubuntu.com/ubuntu disco-updates main restricted universe multiverse
-              deb http://archive.ubuntu.com/ubuntu disco-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 
 [bionic]
@@ -91,13 +75,5 @@ mirror: http://archive.ubuntu.com/ubuntu
 components: main restricted universe multiverse
 extramirrors: deb http://archive.ubuntu.com/ubuntu xenial-updates main restricted universe multiverse
               deb http://archive.ubuntu.com/ubuntu xenial-security main restricted universe multiverse
-extrapackages: pkgbinarymangler pkg-create-dbgsym
-
-[trusty]
-suite: trusty
-mirror: http://archive.ubuntu.com/ubuntu
-components: main restricted universe multiverse
-extramirrors: deb http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
-              deb http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
 extrapackages: pkgbinarymangler pkg-create-dbgsym
 

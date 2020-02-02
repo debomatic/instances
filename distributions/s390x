@@ -34,14 +34,6 @@ extramirrors: deb http://deb.debian.org/debian-security buster/updates main cont
               deb http://deb.debian.org/debian buster-updates main contrib non-free
               deb http://deb.debian.org/debian buster-backports main contrib non-free
 
-[stretch-backports]
-suite: stretch
-mirror: http://deb.debian.org/debian
-components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian-security stretch/updates main contrib non-free
-              deb http://deb.debian.org/debian stretch-updates main contrib non-free
-              deb http://deb.debian.org/debian stretch-backports main contrib non-free
-
 
 
 
@@ -52,14 +44,6 @@ suite: eoan
 mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
 extramirrors: deb http://debomatic-s390x.debian.net/debomatic/eoan eoan main
-extrapackages: pkgbinarymangler
-
-[disco]
-suite: disco
-mirror: http://ports.ubuntu.com
-components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com disco-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com disco-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 
 [bionic]
@@ -76,13 +60,5 @@ mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
 extramirrors: deb http://ports.ubuntu.com xenial-updates main restricted universe multiverse
               deb http://ports.ubuntu.com xenial-security main restricted universe multiverse
-extrapackages: pkgbinarymangler pkg-create-dbgsym
-
-[trusty]
-suite: trusty
-mirror: http://ports.ubuntu.com
-components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com trusty-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com trusty-security main restricted universe multiverse
 extrapackages: pkgbinarymangler pkg-create-dbgsym
 
