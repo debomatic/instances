@@ -14,16 +14,17 @@ loglevel: info
 list: /home/debomatic/config/distributions/armel
 blacklist:
 mapper: {'sid': 'unstable',
-         'buster': 'testing',
-         'stretch': 'stable',
-         'jessie': 'oldstable',
-         'wheezy': 'oldoldstable',
+         'bullseye': 'testing',
+         'buster': 'stable',
+         'stretch': 'oldstable',
+         'jessie': 'oldoldstable',
          'proposed-updates': 'stable',
          'oldstable-proposed-updates': 'oldstable',
          'oldoldstable-proposed-updates': 'oldoldstable',
-         'stretch-security': 'stable',
-         'jessie-security': 'oldstable',
-         'wheezy-security': 'oldoldstable',
+         'buster-security': 'stable',
+         'stretch-security': 'oldstable',
+         'jessie-security': 'oldoldstable',
+         'buster-backports-sloppy': 'buster-backports',
          'stretch-backports-sloppy': 'stretch-backports',
          'jessie-backports-sloppy': 'jessie-backports'}
 

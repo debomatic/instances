@@ -130,9 +130,25 @@
         "ports": []
     },
     {
-        "name": "eoan",
+        "name": "groovy",
         "origin": "ubuntu",
         "type": "development",
+        "architectures": [
+            "amd64",
+            "i386"
+        ],
+        "ports": [
+            "arm64",
+            "armhf",
+            "ppc64el",
+            "s390x"
+        ],
+        "extrapackages": "pkgbinarymangler"
+    },
+    {
+        "name": "focal",
+        "origin": "ubuntu",
+        "type": "supported",
         "architectures": [
             "amd64",
             "i386"

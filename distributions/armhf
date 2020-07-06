@@ -54,11 +54,19 @@ extramirrors: deb http://deb.debian.org/debian-security stretch/updates main con
 
 # Ubuntu
 
-[eoan]
-suite: eoan
+[groovy]
+suite: groovy
 mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
-extramirrors: deb http://debomatic-armhf.debian.net/debomatic/eoan eoan main
+extramirrors: deb http://debomatic-armhf.debian.net/debomatic/groovy groovy main
+extrapackages: pkgbinarymangler
+
+[focal]
+suite: focal
+mirror: http://ports.ubuntu.com
+components: main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com focal-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com focal-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 
 [bionic]
