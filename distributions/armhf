@@ -54,19 +54,19 @@ extramirrors: deb http://deb.debian.org/debian-security stretch/updates main con
 
 # Ubuntu
 
+[impish]
+suite: impish
+mirror: http://ports.ubuntu.com
+components: main restricted universe multiverse
+extramirrors: deb http://debomatic-armhf.debian.net/debomatic/impish impish main
+extrapackages: pkgbinarymangler
+
 [hirsute]
 suite: hirsute
 mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
-extramirrors: deb http://debomatic-armhf.debian.net/debomatic/hirsute hirsute main
-extrapackages: pkgbinarymangler
-
-[groovy]
-suite: groovy
-mirror: http://ports.ubuntu.com
-components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com groovy-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com groovy-security main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com hirsute-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com hirsute-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 
 [focal]

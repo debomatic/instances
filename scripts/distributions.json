@@ -130,7 +130,7 @@
         "ports": []
     },
     {
-        "name": "hirsute",
+        "name": "impish",
         "origin": "ubuntu",
         "type": "development",
         "architectures": [
@@ -146,7 +146,7 @@
         "extrapackages": "pkgbinarymangler"
     },
     {
-        "name": "groovy",
+        "name": "hirsute",
         "origin": "ubuntu",
         "type": "supported",
         "architectures": [
