@@ -14,16 +14,16 @@ loglevel: info
 list: /home/debomatic/config/distributions/mipsel
 blacklist:
 mapper: {'sid': 'unstable',
-         'bullseye': 'testing',
-         'buster': 'stable',
-         'stretch': 'oldstable',
-         'jessie': 'oldoldstable',
+         'bookworm': 'testing',
+         'bullseye': 'stable',
+         'buster': 'oldstable',
+         'stretch': 'oldoldstable',
          'proposed-updates': 'stable',
          'oldstable-proposed-updates': 'oldstable',
          'oldoldstable-proposed-updates': 'oldoldstable',
-         'buster-security': 'stable',
-         'stretch-security': 'oldstable',
-         'jessie-security': 'oldoldstable',
+         'bullseye-security': 'stable',
+         'buster-security': 'oldstable',
+         'stretch-security': 'oldoldstable',
          'buster-backports-sloppy': 'buster-backports',
          'stretch-backports-sloppy': 'stretch-backports',
          'jessie-backports-sloppy': 'jessie-backports'}

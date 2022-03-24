@@ -23,7 +23,7 @@ extramirrors: deb http://debomatic-armel.debian.net/debomatic/testing testing ma
 suite: stable
 mirror: http://deb.debian.org/debian
 components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian-security stable/updates main contrib non-free
+extramirrors: deb http://deb.debian.org/debian-security/ stable-security main contrib non-free
               deb http://deb.debian.org/debian stable-updates main contrib non-free
 
 [oldstable]
@@ -32,6 +32,14 @@ mirror: http://deb.debian.org/debian
 components: main contrib non-free
 extramirrors: deb http://deb.debian.org/debian-security oldstable/updates main contrib non-free
               deb http://deb.debian.org/debian oldstable-updates main contrib non-free
+
+[bullseye-backports]
+suite: bullseye
+mirror: http://deb.debian.org/debian
+components: main contrib non-free
+extramirrors: deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
+              deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+              deb http://deb.debian.org/debian bullseye-backports main contrib non-free
 
 [buster-backports]
 suite: buster
