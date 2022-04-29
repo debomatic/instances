@@ -1,76 +1,76 @@
 [debomatic]
-builduser: sbuild
-incoming: /srv/debomatic-s390x
-debootstrap: qemu-debootstrap
-architecture: s390x
-threads: 3
-inotify: True
-sleep: 60
-interval: 3600
-logfile: /var/log/debomatic-s390x.log
-loglevel: info
+builduser : sbuild
+incoming : /srv/debomatic-s390x
+debootstrap : qemu-debootstrap
+architecture : s390x
+threads : 3
+inotify : True
+sleep : 60
+interval : 3600
+logfile : /var/log/debomatic-s390x.log
+loglevel : info
 
 [distributions]
-list: /home/debomatic/config/distributions/s390x
+list : /home/debomatic/config/distributions/s390x
 blacklist:
-mapper: {'sid': 'unstable',
-         'bookworm': 'testing',
-         'bullseye': 'stable',
-         'buster': 'oldstable',
-         'stretch': 'oldoldstable',
-         'proposed-updates': 'stable',
-         'oldstable-proposed-updates': 'oldstable',
-         'oldoldstable-proposed-updates': 'oldoldstable',
-         'bullseye-security': 'stable',
-         'buster-security': 'oldstable',
-         'stretch-security': 'oldoldstable',
-         'buster-backports-sloppy': 'buster-backports',
-         'stretch-backports-sloppy': 'stretch-backports',
-         'jessie-backports-sloppy': 'jessie-backports'}
+mapper : {'sid': 'unstable',
+         'bookworm' : 'testing',
+         'bullseye' : 'stable',
+         'buster' : 'oldstable',
+         'stretch' : 'oldoldstable',
+         'proposed-updates' : 'stable',
+         'oldstable-proposed-updates' : 'oldstable',
+         'oldoldstable-proposed-updates' : 'oldoldstable',
+         'bullseye-security' : 'stable',
+         'buster-security' : 'oldstable',
+         'stretch-security' : 'oldoldstable',
+         'buster-backports-sloppy' : 'buster-backports',
+         'stretch-backports-sloppy' : 'stretch-backports',
+         'jessie-backports-sloppy' : 'jessie-backports'}
 
 [chroots]
-profile: debomatic
-commands: /home/debomatic/debomatic/sbuildcommands
+profile : debomatic
+commands : /home/debomatic/debomatic/sbuildcommands
 
 [dpr]
-dpr: True
-prefix: dpr
-repository: deb http://debomatic-s390x.debian.net/debomatic/%%(dist)s %%(dist)s main
+dpr : True
+prefix : dpr
+repository : deb http://debomatic-s390x.debian.net/debomatic/%%(dist)s %%(dist)s main
 
 [gpg]
-gpg: True
-keyring: /home/debomatic/config/keyring/debomatic.gpg
+gpg : True
+keyring : /home/debomatic/config/keyring/debomatic.gpg
 
 [modules]
-modules: True
-path: /home/debomatic/debomatic/modules
-threads: 5
-blacklist: Mailer
+modules : True
+path : /home/debomatic/debomatic/modules
+threads : 5
+blacklist : Mailer
 
 [autopkgtest]
-options = --no-built-binaries
+options : --no-built-binaries
 
 [blhc]
-options: --all
+options : --all
 
 [lintian]
-options: -i -I -E --pedantic
+options : -i -I -E --pedantic
 
 [piuparts]
-options: --log-level=info
+options : --log-level=info
 
 [removechroots]
-days: 7
+days : 7
 
 [removepackages]
-days: 15
+days : 15
 
 [updatechroots]
-days: 3
+days : 3
 
 [repository]
-gpgkey: 0xF4914DAB
-pubring: /home/debomatic/config/keyring-private/pubring.gpg
+gpgkey : 0xF4914DAB
+pubring : /home/debomatic/config/keyring-private/pubring.gpg
 
 [jsonlogger]
-jsonfile = /var/log/debomatic-s390x.json
+jsonfile : /var/log/debomatic-s390x.json
