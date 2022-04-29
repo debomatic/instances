@@ -12,21 +12,31 @@ loglevel : info
 
 [distributions]
 list : /home/debomatic/config/distributions/armhf
-blacklist:
+blacklist : 
 mapper : {'sid': 'unstable',
-         'bookworm' : 'testing',
-         'bullseye' : 'stable',
-         'buster' : 'oldstable',
-         'stretch' : 'oldoldstable',
-         'proposed-updates' : 'stable',
-         'oldstable-proposed-updates' : 'oldstable',
-         'oldoldstable-proposed-updates' : 'oldoldstable',
-         'bullseye-security' : 'stable',
-         'buster-security' : 'oldstable',
-         'stretch-security' : 'oldoldstable',
-         'buster-backports-sloppy' : 'buster-backports',
-         'stretch-backports-sloppy' : 'stretch-backports',
-         'jessie-backports-sloppy' : 'jessie-backports'}
+	  'rc-buggy': 'experimental',
+	  'bookworm': 'testing',
+	  'bookworm-updates': 'testing',
+	  'bookworm-proposed-updates': 'testing',
+	  'bookworm-security': 'testing',
+	  'bullseye': 'stable',
+	  'bullseye-updates': 'stable',
+	  'bullseye-proposed-updates': 'stable',
+	  'bullseye-security': 'stable',
+	  'buster': 'oldstable',
+	  'buster-updates': 'oldstable',
+	  'buster-proposed-updates': 'oldstable',
+	  'buster-security': 'oldstable',
+	  'stretch': 'oldoldstable',
+	  'stretch-updates': 'oldoldstable',
+	  'stretch-proposed-updates': 'oldoldstable',
+	  'stretch-security': 'oldoldstable',
+	  'bullseye-backports': 'stable-backports',
+	  'bullseye-backports-sloppy': 'stable-backports',
+	  'buster-backports': 'oldstable-backports',
+	  'buster-backports-sloppy': 'oldstable-backports',
+	  'stretch-backports': 'oldoldstable-backports',
+	  'stretch-backports-sloppy': 'oldoldstable-backports'}
 
 [chroots]
 profile : debomatic
@@ -74,3 +84,4 @@ pubring : /home/debomatic/config/keyring-private/pubring.gpg
 
 [jsonlogger]
 jsonfile : /var/log/debomatic-armhf.json
+

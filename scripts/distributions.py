@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 from collections import defaultdict
+from configparser import ConfigParser
+from glob import glob
 from json import load
 from os import mkdir
 from os.path import join
@@ -8,6 +10,7 @@ from re import search
 from shutil import rmtree
 
 
+mapper = {}
 distfiles = defaultdict(str)
 with open('distributions.json') as json_file:
     distributions = load(json_file)
@@ -83,6 +86,22 @@ for dist in distributions:
             distfiles[arch] += ('extrapackages: {}\n'
                                 .format(dist['extrapackages']))
         distfiles[arch] += '\n'
+    if dist['origin'] == 'debian':
+        if 'codename' in dist:
+            if dist['name'] in ('unstable', 'experimental'):
+                suffixes = ('',)
+            elif '-backports' in dist['name']:
+                suffixes = ('', '-sloppy')
+            else:
+                suffixes = ('', '-updates', '-proposed-updates', '-security')
+            for suffix in suffixes:
+                mapper[f'''{dist['codename']}{suffix}'''] = dist['name']
+for arch in glob('../architectures/*'):
+    cp = ConfigParser(delimiters=':')
+    cp.read(arch)
+    cp['distributions']['mapper'] = str(mapper).replace(', ', ',\n  ')
+    with open(arch, 'w') as fd:
+        cp.write(fd)
 rmtree('../distributions')
 mkdir('../distributions')
 for arch in distfiles:

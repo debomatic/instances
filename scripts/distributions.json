@@ -1,6 +1,7 @@
 [
     {
         "name": "unstable",
+        "codename": "sid",
         "origin": "debian",
         "type": "development",
         "experimental": false,
@@ -21,6 +22,7 @@
     },
     {
         "name": "experimental",
+        "codename": "rc-buggy",
         "origin": "debian",
         "type": "development",
         "experimental": true,
@@ -41,6 +43,7 @@
     },
     {
         "name": "testing",
+        "codename": "bookworm",
         "origin": "debian",
         "type": "development",
         "experimental": false,
@@ -60,6 +63,7 @@
     },
     {
         "name": "stable",
+        "codename": "bullseye",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
@@ -79,6 +83,7 @@
     },
     {
         "name": "oldstable",
+        "codename": "buster",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
@@ -99,6 +104,7 @@
     },
     {
         "name": "oldoldstable",
+        "codename": "stretch",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
@@ -113,7 +119,8 @@
         "ports": []
     },
     {
-        "name": "bullseye-backports",
+        "name": "stable-backports",
+        "codename": "bullseye-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
@@ -132,7 +139,8 @@
         "ports": []
     },
     {
-        "name": "buster-backports",
+        "name": "oldstable-backports",
+        "codename": "buster-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
@@ -152,7 +160,8 @@
         "ports": []
     },
     {
-        "name": "stretch-backports",
+        "name": "oldoldstable-backports",
+        "codename": "stretch-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
