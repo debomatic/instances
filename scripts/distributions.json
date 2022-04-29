@@ -11,7 +11,6 @@
             "armel",
             "armhf",
             "i386",
-            "mips",
             "mips64el",
             "mipsel",
             "powerpc",
@@ -32,7 +31,6 @@
             "armel",
             "armhf",
             "i386",
-            "mips",
             "mips64el",
             "mipsel",
             "powerpc",
@@ -53,7 +51,6 @@
             "armel",
             "armhf",
             "i386",
-            "mips",
             "mips64el",
             "mipsel",
             "ppc64el",
@@ -63,6 +60,25 @@
     },
     {
         "name": "stable",
+        "origin": "debian",
+        "type": "supported",
+        "experimental": false,
+        "oldsecurity": false,
+        "architectures": [
+            "amd64",
+            "arm64",
+            "armel",
+            "armhf",
+            "i386",
+            "mips64el",
+            "mipsel",
+            "ppc64el",
+            "s390x"
+        ],
+        "ports": []
+    },
+    {
+        "name": "oldstable",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
@@ -82,16 +98,36 @@
         "ports": []
     },
     {
-        "name": "oldstable",
+        "name": "oldoldstable",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
         "oldsecurity": true,
         "architectures": [
             "amd64",
+            "arm64",
             "armel",
             "armhf",
             "i386"
+        ],
+        "ports": []
+    },
+    {
+        "name": "bullseye-backports",
+        "origin": "debian",
+        "type": "backports",
+        "experimental": false,
+        "oldsecurity": false,
+        "architectures": [
+            "amd64",
+            "arm64",
+            "armel",
+            "armhf",
+            "i386",
+            "mips64el",
+            "mipsel",
+            "ppc64el",
+            "s390x"
         ],
         "ports": []
     },
@@ -123,6 +159,7 @@
         "oldsecurity": true,
         "architectures": [
             "amd64",
+            "arm64",
             "armel",
             "armhf",
             "i386"
@@ -130,7 +167,7 @@
         "ports": []
     },
     {
-        "name": "impish",
+        "name": "kinetic",
         "origin": "ubuntu",
         "type": "development",
         "architectures": [
@@ -146,7 +183,23 @@
         "extrapackages": "pkgbinarymangler"
     },
     {
-        "name": "hirsute",
+        "name": "jammy",
+        "origin": "ubuntu",
+        "type": "supported",
+        "architectures": [
+            "amd64",
+            "i386"
+        ],
+        "ports": [
+            "arm64",
+            "armhf",
+            "ppc64el",
+            "s390x"
+        ],
+        "extrapackages": "pkgbinarymangler"
+    },
+    {
+        "name": "impish",
         "origin": "ubuntu",
         "type": "supported",
         "architectures": [
