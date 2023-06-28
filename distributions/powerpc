@@ -3,14 +3,14 @@
 [unstable]
 suite: unstable
 mirror: http://deb.debian.org/debian
-components: main contrib non-free
+components: main contrib non-free non-free-firmware
 extramirrors: deb http://debomatic-powerpc.debian.net/debomatic/unstable unstable main
 
 [experimental]
 suite: unstable
 mirror: http://deb.debian.org/debian
-components: main contrib non-free
-extramirrors: deb http://deb.debian.org/debian experimental main contrib non-free
+components: main contrib non-free non-free-firmware
+extramirrors: deb http://deb.debian.org/debian experimental main contrib non-free non-free-firmware
               deb http://debomatic-powerpc.debian.net/debomatic/experimental experimental main
 
 

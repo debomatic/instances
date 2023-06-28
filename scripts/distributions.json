@@ -6,6 +6,7 @@
         "type": "development",
         "experimental": false,
         "oldsecurity": false,
+        "firmware": true,
         "architectures": [
             "amd64",
             "arm64",
@@ -27,6 +28,7 @@
         "type": "development",
         "experimental": true,
         "oldsecurity": false,
+        "firmware": true,
         "architectures": [
             "amd64",
             "arm64",
@@ -43,11 +45,12 @@
     },
     {
         "name": "testing",
-        "codename": "bookworm",
+        "codename": "trixie",
         "origin": "debian",
         "type": "development",
         "experimental": false,
         "oldsecurity": false,
+        "firmware": true,
         "architectures": [
             "amd64",
             "arm64",
@@ -63,11 +66,12 @@
     },
     {
         "name": "stable",
-        "codename": "bullseye",
+        "codename": "bookworm",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
         "oldsecurity": false,
+        "firmware": true,
         "architectures": [
             "amd64",
             "arm64",
@@ -83,11 +87,12 @@
     },
     {
         "name": "oldstable",
-        "codename": "buster",
+        "codename": "bullseye",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
         "oldsecurity": true,
+        "firmware": false,
         "architectures": [
             "amd64",
             "arm64",
@@ -104,15 +109,15 @@
     },
     {
         "name": "oldoldstable",
-        "codename": "stretch",
+        "codename": "buster",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
         "oldsecurity": true,
+        "firmware": false,
         "architectures": [
             "amd64",
             "arm64",
-            "armel",
             "armhf",
             "i386"
         ],
@@ -120,11 +125,12 @@
     },
     {
         "name": "stable-backports",
-        "codename": "bullseye-backports",
+        "codename": "bookworm-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
         "oldsecurity": false,
+        "firmware": true,
         "architectures": [
             "amd64",
             "arm64",
@@ -140,11 +146,12 @@
     },
     {
         "name": "oldstable-backports",
-        "codename": "buster-backports",
+        "codename": "bullseye-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
         "oldsecurity": true,
+        "firmware": false,
         "architectures": [
             "amd64",
             "arm64",
@@ -161,11 +168,12 @@
     },
     {
         "name": "oldoldstable-backports",
-        "codename": "stretch-backports",
+        "codename": "buster-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
         "oldsecurity": true,
+        "firmware": false,
         "architectures": [
             "amd64",
             "arm64",
@@ -176,7 +184,7 @@
         "ports": []
     },
     {
-        "name": "kinetic",
+        "name": "mantic",
         "origin": "ubuntu",
         "type": "development",
         "architectures": [
@@ -192,7 +200,7 @@
         "extrapackages": "pkgbinarymangler"
     },
     {
-        "name": "jammy",
+        "name": "lunar",
         "origin": "ubuntu",
         "type": "supported",
         "architectures": [
@@ -208,7 +216,7 @@
         "extrapackages": "pkgbinarymangler"
     },
     {
-        "name": "impish",
+        "name": "jammy",
         "origin": "ubuntu",
         "type": "supported",
         "architectures": [

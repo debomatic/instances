@@ -27,7 +27,10 @@ for dist in distributions:
             else:
                 suite = name
             url = 'http://deb.debian.org/debian'
-            components = 'main contrib non-free'
+            if dist['firmware']:
+                components = 'main contrib non-free non-free-firmware'
+            else:
+                components = 'main contrib non-free'
             if dist['type'] in ('supported', 'backports'):
                 if dist['oldsecurity']:
                     security = '{0}/updates'.format(suite)
