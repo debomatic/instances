@@ -14,8 +14,6 @@
             "armhf",
             "i386",
             "mips64el",
-            "mipsel",
-            "powerpc",
             "ppc64el",
             "s390x"
         ],
@@ -36,8 +34,6 @@
             "armhf",
             "i386",
             "mips64el",
-            "mipsel",
-            "powerpc",
             "ppc64el",
             "s390x"
         ],
@@ -58,7 +54,6 @@
             "armhf",
             "i386",
             "mips64el",
-            "mipsel",
             "ppc64el",
             "s390x"
         ],
@@ -79,7 +74,6 @@
             "armhf",
             "i386",
             "mips64el",
-            "mipsel",
             "ppc64el",
             "s390x"
         ],
@@ -99,9 +93,7 @@
             "armel",
             "armhf",
             "i386",
-            "mips",
             "mips64el",
-            "mipsel",
             "ppc64el",
             "s390x"
         ],
@@ -138,7 +130,6 @@
             "armhf",
             "i386",
             "mips64el",
-            "mipsel",
             "ppc64el",
             "s390x"
         ],
@@ -158,9 +149,7 @@
             "armel",
             "armhf",
             "i386",
-            "mips",
             "mips64el",
-            "mipsel",
             "ppc64el",
             "s390x"
         ],
@@ -274,7 +263,6 @@
         "ports": [
             "arm64",
             "armhf",
-            "powerpc",
             "ppc64el",
             "s390x"
         ],
