@@ -76,11 +76,11 @@ for dist in distributions:
         if dist['type'] == 'development':
             if extramirrors:
                 extramirrors += ('              ' +
-                                 'deb http://debomatic-{0}.debian.net/'
+                                 'deb https://debomatic-{0}.debian.net/'
                                  .format(arch) +
                                  'debomatic/{0} {0} main'.format(name))
             else:
-                extramirrors += ('deb http://debomatic-{0}.debian.net/'
+                extramirrors += ('deb https://debomatic-{0}.debian.net/'
                                  .format(arch) +
                                  'debomatic/{0} {0} main'.format(name))
         if extramirrors:
