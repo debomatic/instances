@@ -45,7 +45,7 @@ commands : /home/debomatic/debomatic/sbuildcommands
 [dpr]
 dpr : True
 prefix : dpr
-repository : deb https://debomatic-ppc64el.debian.net/debomatic/%%(dist)s %%(dist)s main
+repository : deb http://debomatic-ppc64el.debian.net/debomatic/%%(dist)s %%(dist)s main
 
 [gpg]
 gpg : True

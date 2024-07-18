@@ -4,20 +4,20 @@
 suite: unstable
 mirror: http://deb.debian.org/debian
 components: main contrib non-free non-free-firmware
-extramirrors: deb https://debomatic-amd64.debian.net/debomatic/unstable unstable main
+extramirrors: deb http://debomatic-amd64.debian.net/debomatic/unstable unstable main
 
 [experimental]
 suite: unstable
 mirror: http://deb.debian.org/debian
 components: main contrib non-free non-free-firmware
 extramirrors: deb http://deb.debian.org/debian experimental main contrib non-free non-free-firmware
-              deb https://debomatic-amd64.debian.net/debomatic/experimental experimental main
+              deb http://debomatic-amd64.debian.net/debomatic/experimental experimental main
 
 [testing]
 suite: testing
 mirror: http://deb.debian.org/debian
 components: main contrib non-free non-free-firmware
-extramirrors: deb https://debomatic-amd64.debian.net/debomatic/testing testing main
+extramirrors: deb http://debomatic-amd64.debian.net/debomatic/testing testing main
 
 [stable]
 suite: stable
@@ -73,7 +73,7 @@ extramirrors: deb http://deb.debian.org/debian-security oldoldstable/updates mai
 suite: mantic
 mirror: http://archive.ubuntu.com/ubuntu
 components: main restricted universe multiverse
-extramirrors: deb https://debomatic-amd64.debian.net/debomatic/mantic mantic main
+extramirrors: deb http://debomatic-amd64.debian.net/debomatic/mantic mantic main
 extrapackages: pkgbinarymangler
 
 [lunar]
