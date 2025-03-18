@@ -74,7 +74,7 @@ days : 15
 
 [repository]
 gpgkey : 0xF4914DAB
-keyring : /home/debomatic/config/keyring-private/pubring.gpg
+keyring : /home/debomatic/config/keyring-private
 
 [jsonlogger]
 jsonfile : /var/log/debomatic-armel.json
