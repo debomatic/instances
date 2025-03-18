@@ -4,6 +4,7 @@ ConditionPathExists=/home/debomatic/config/architectures/%i
 
 [Service]
 Type=notify
+User=debomatic
 ExecStart=/home/debomatic/debomatic/debomatic -c /home/debomatic/config/architectures/%i -i
 ExecStop=/home/debomatic/debomatic/debomatic -c /home/debomatic/config/architectures/%i -q
 KillMode=process
