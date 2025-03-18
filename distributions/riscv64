@@ -4,14 +4,14 @@
 suite: unstable
 mirror: http://deb.debian.org/debian
 components: main contrib non-free non-free-firmware
-extramirrors: deb http://debomatic-riscv64.debian.net/debomatic/unstable unstable main
+extramirrors: deb [signed-by=/home/debomatic/config/keyring-private/pubring.gpg] http://debomatic-riscv64.debian.net/debomatic/unstable unstable main
 
 [experimental]
 suite: unstable
 mirror: http://deb.debian.org/debian
 components: main contrib non-free non-free-firmware
 extramirrors: deb http://deb.debian.org/debian experimental main contrib non-free non-free-firmware
-              deb http://debomatic-riscv64.debian.net/debomatic/experimental experimental main
+              deb [signed-by=/home/debomatic/config/keyring-private/pubring.gpg] http://debomatic-riscv64.debian.net/debomatic/experimental experimental main
 
 
 
@@ -22,7 +22,7 @@ extramirrors: deb http://deb.debian.org/debian experimental main contrib non-fre
 suite: mantic
 mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
-extramirrors: deb http://debomatic-riscv64.debian.net/debomatic/mantic mantic main
+extramirrors: deb [signed-by=/home/debomatic/config/keyring-private/pubring.gpg] http://debomatic-riscv64.debian.net/debomatic/mantic mantic main
 extrapackages: pkgbinarymangler
 
 [lunar]

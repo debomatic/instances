@@ -1,7 +1,5 @@
 [debomatic]
-builduser : sbuild
 incoming : /srv/debomatic-armel
-debootstrap : qemu-debootstrap
 architecture : armel
 threads : 3
 inotify : True
@@ -39,13 +37,12 @@ mapper : {'sid': 'unstable',
 	  'buster-backports-sloppy': 'oldoldstable-backports'}
 
 [chroots]
-profile : debomatic
 commands : /home/debomatic/debomatic/sbuildcommands
 
 [dpr]
 dpr : True
 prefix : dpr
-repository : deb http://debomatic-armel.debian.net/debomatic/%%(dist)s %%(dist)s main
+repository : deb [signed-by=/home/debomatic/config/keyring-private/pubring.gpg] http://debomatic-armel.debian.net/debomatic/%%(dist)s %%(dist)s main
 
 [gpg]
 gpg : True
@@ -75,12 +72,9 @@ days : 7
 [removepackages]
 days : 15
 
-[updatechroots]
-days : 3
-
 [repository]
 gpgkey : 0xF4914DAB
-pubring : /home/debomatic/config/keyring-private/pubring.gpg
+keyring : /home/debomatic/config/keyring-private/pubring.gpg
 
 [jsonlogger]
 jsonfile : /var/log/debomatic-armel.json
