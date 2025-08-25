@@ -4,7 +4,7 @@ architecture : s390x
 threads : 3
 inotify : True
 sleep : 60
-interval : 3600
+interval : 300
 logfile : /var/log/debomatic-s390x.log
 loglevel : info
 
