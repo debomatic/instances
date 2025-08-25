@@ -43,7 +43,7 @@
     },
     {
         "name": "testing",
-        "codename": "trixie",
+        "codename": "forky",
         "origin": "debian",
         "type": "development",
         "experimental": false,
@@ -63,7 +63,7 @@
     },
     {
         "name": "stable",
-        "codename": "bookworm",
+        "codename": "trixie",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
@@ -83,7 +83,7 @@
     },
     {
         "name": "oldstable",
-        "codename": "bullseye",
+        "codename": "bookworm",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
@@ -103,7 +103,7 @@
     },
     {
         "name": "oldoldstable",
-        "codename": "buster",
+        "codename": "bullseye",
         "origin": "debian",
         "type": "supported",
         "experimental": false,
@@ -119,7 +119,7 @@
     },
     {
         "name": "stable-backports",
-        "codename": "bookworm-backports",
+        "codename": "trixie-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
@@ -139,7 +139,7 @@
     },
     {
         "name": "oldstable-backports",
-        "codename": "bullseye-backports",
+        "codename": "bookworm-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
@@ -159,7 +159,7 @@
     },
     {
         "name": "oldoldstable-backports",
-        "codename": "buster-backports",
+        "codename": "bullseye-backports",
         "origin": "debian",
         "type": "backports",
         "experimental": false,
@@ -175,7 +175,7 @@
         "ports": []
     },
     {
-        "name": "mantic",
+        "name": "questing",
         "origin": "ubuntu",
         "type": "development",
         "architectures": [
@@ -192,7 +192,24 @@
         "extrapackages": "pkgbinarymangler"
     },
     {
-        "name": "lunar",
+        "name": "plucky",
+        "origin": "ubuntu",
+        "type": "supported",
+        "architectures": [
+            "amd64",
+            "i386"
+        ],
+        "ports": [
+            "arm64",
+            "armhf",
+            "ppc64el",
+            "riscv64",
+            "s390x"
+        ],
+        "extrapackages": "pkgbinarymangler"
+    },
+    {
+        "name": "noble",
         "origin": "ubuntu",
         "type": "supported",
         "architectures": [
@@ -224,54 +241,5 @@
             "s390x"
         ],
         "extrapackages": "pkgbinarymangler"
-    },
-    {
-        "name": "focal",
-        "origin": "ubuntu",
-        "type": "supported",
-        "architectures": [
-            "amd64",
-            "i386"
-        ],
-        "ports": [
-            "arm64",
-            "armhf",
-            "ppc64el",
-            "riscv64",
-            "s390x"
-        ],
-        "extrapackages": "pkgbinarymangler"
-    },
-    {
-        "name": "bionic",
-        "origin": "ubuntu",
-        "type": "supported",
-        "architectures": [
-            "amd64",
-            "i386"
-        ],
-        "ports": [
-            "arm64",
-            "armhf",
-            "ppc64el",
-            "s390x"
-        ],
-        "extrapackages": "pkgbinarymangler"
-    },
-    {
-        "name": "xenial",
-        "origin": "ubuntu",
-        "type": "supported",
-        "architectures": [
-            "amd64",
-            "i386"
-        ],
-        "ports": [
-            "arm64",
-            "armhf",
-            "ppc64el",
-            "s390x"
-        ],
-        "extrapackages": "pkgbinarymangler pkg-create-dbgsym"
     }
 ]

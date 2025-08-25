@@ -18,19 +18,27 @@ extramirrors: deb http://deb.debian.org/debian experimental main contrib non-fre
 
 # Ubuntu
 
-[mantic]
-suite: mantic
+[questing]
+suite: questing
 mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
-extramirrors: deb [signed-by=/home/debomatic/config/keyring-private/pubring.gpg] http://debomatic-riscv64.debian.net/debomatic/mantic mantic main
+extramirrors: deb [signed-by=/home/debomatic/config/keyring-private/pubring.gpg] http://debomatic-riscv64.debian.net/debomatic/questing questing main
 extrapackages: pkgbinarymangler
 
-[lunar]
-suite: lunar
+[plucky]
+suite: plucky
 mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com lunar-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com lunar-security main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com plucky-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com plucky-security main restricted universe multiverse
+extrapackages: pkgbinarymangler
+
+[noble]
+suite: noble
+mirror: http://ports.ubuntu.com
+components: main restricted universe multiverse
+extramirrors: deb http://ports.ubuntu.com noble-updates main restricted universe multiverse
+              deb http://ports.ubuntu.com noble-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 
 [jammy]
@@ -39,13 +47,5 @@ mirror: http://ports.ubuntu.com
 components: main restricted universe multiverse
 extramirrors: deb http://ports.ubuntu.com jammy-updates main restricted universe multiverse
               deb http://ports.ubuntu.com jammy-security main restricted universe multiverse
-extrapackages: pkgbinarymangler
-
-[focal]
-suite: focal
-mirror: http://ports.ubuntu.com
-components: main restricted universe multiverse
-extramirrors: deb http://ports.ubuntu.com focal-updates main restricted universe multiverse
-              deb http://ports.ubuntu.com focal-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 

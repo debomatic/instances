@@ -69,19 +69,27 @@ extramirrors: deb http://deb.debian.org/debian-security oldoldstable/updates mai
 
 # Ubuntu
 
-[mantic]
-suite: mantic
+[questing]
+suite: questing
 mirror: http://archive.ubuntu.com/ubuntu
 components: main restricted universe multiverse
-extramirrors: deb [signed-by=/home/debomatic/config/keyring-private/pubring.gpg] http://debomatic-amd64.debian.net/debomatic/mantic mantic main
+extramirrors: deb [signed-by=/home/debomatic/config/keyring-private/pubring.gpg] http://debomatic-amd64.debian.net/debomatic/questing questing main
 extrapackages: pkgbinarymangler
 
-[lunar]
-suite: lunar
+[plucky]
+suite: plucky
 mirror: http://archive.ubuntu.com/ubuntu
 components: main restricted universe multiverse
-extramirrors: deb http://archive.ubuntu.com/ubuntu lunar-updates main restricted universe multiverse
-              deb http://archive.ubuntu.com/ubuntu lunar-security main restricted universe multiverse
+extramirrors: deb http://archive.ubuntu.com/ubuntu plucky-updates main restricted universe multiverse
+              deb http://archive.ubuntu.com/ubuntu plucky-security main restricted universe multiverse
+extrapackages: pkgbinarymangler
+
+[noble]
+suite: noble
+mirror: http://archive.ubuntu.com/ubuntu
+components: main restricted universe multiverse
+extramirrors: deb http://archive.ubuntu.com/ubuntu noble-updates main restricted universe multiverse
+              deb http://archive.ubuntu.com/ubuntu noble-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
 
 [jammy]
@@ -91,28 +99,4 @@ components: main restricted universe multiverse
 extramirrors: deb http://archive.ubuntu.com/ubuntu jammy-updates main restricted universe multiverse
               deb http://archive.ubuntu.com/ubuntu jammy-security main restricted universe multiverse
 extrapackages: pkgbinarymangler
-
-[focal]
-suite: focal
-mirror: http://archive.ubuntu.com/ubuntu
-components: main restricted universe multiverse
-extramirrors: deb http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
-              deb http://archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse
-extrapackages: pkgbinarymangler
-
-[bionic]
-suite: bionic
-mirror: http://archive.ubuntu.com/ubuntu
-components: main restricted universe multiverse
-extramirrors: deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse
-              deb http://archive.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
-extrapackages: pkgbinarymangler
-
-[xenial]
-suite: xenial
-mirror: http://archive.ubuntu.com/ubuntu
-components: main restricted universe multiverse
-extramirrors: deb http://archive.ubuntu.com/ubuntu xenial-updates main restricted universe multiverse
-              deb http://archive.ubuntu.com/ubuntu xenial-security main restricted universe multiverse
-extrapackages: pkgbinarymangler pkg-create-dbgsym
 
