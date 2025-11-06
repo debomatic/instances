@@ -10,10 +10,8 @@
         "architectures": [
             "amd64",
             "arm64",
-            "armel",
             "armhf",
             "i386",
-            "mips64el",
             "ppc64el",
             "riscv64",
             "s390x"
@@ -31,10 +29,8 @@
         "architectures": [
             "amd64",
             "arm64",
-            "armel",
             "armhf",
             "i386",
-            "mips64el",
             "ppc64el",
             "riscv64",
             "s390x"
@@ -52,10 +48,8 @@
         "architectures": [
             "amd64",
             "arm64",
-            "armel",
             "armhf",
             "i386",
-            "mips64el",
             "ppc64el",
             "s390x"
         ],
